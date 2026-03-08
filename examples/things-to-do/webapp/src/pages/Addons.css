@@ -1,0 +1,58 @@
+.addons-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.addons-category-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.addons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.addon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.addon-row:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.addon-row:hover {
+  background: #f9fafb;
+}
+
+.addon-row--selected {
+  background: #eff6ff;
+}
+
+.addon-row--selected:hover {
+  background: #dbeafe;
+}
+
+.addon-row-name {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.addon-row-price {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2563eb;
+}

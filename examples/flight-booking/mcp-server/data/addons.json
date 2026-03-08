@@ -1,0 +1,3074 @@
+[
+  {
+    "flight_number": "UA101",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA101",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA101",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA101",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA101",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA101",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA101",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA101",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA101",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA101",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA101",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA101",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA202",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA303",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA404",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA505",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA606",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 22.0,
+    "included": false
+  },
+  {
+    "flight_number": "UA707",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 30.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL110",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 30.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL220",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 30.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL330",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 30.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL440",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 30.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 25.0,
+    "included": false
+  },
+  {
+    "flight_number": "DL550",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 12.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 40.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA150",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 40.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA250",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 40.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA350",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 40.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA450",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 40.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 20.0,
+    "included": false
+  },
+  {
+    "flight_number": "AA550",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 11.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN180",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN280",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN380",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN480",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 35.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 18.0,
+    "included": false
+  },
+  {
+    "flight_number": "WN580",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 9.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 45.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6120",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 45.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6220",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 45.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6320",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 45.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6420",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 45.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 28.0,
+    "included": false
+  },
+  {
+    "flight_number": "B6520",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 13.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 30.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS130",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 30.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS230",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 30.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS330",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 30.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS430",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "Business",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "Business",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "Business",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "Business",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "First Class",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "First Class",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "First Class",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "First Class",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "Economy",
+    "name": "Carry-On",
+    "category": "luggage",
+    "price": 0.0,
+    "included": true
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "Economy",
+    "name": "Checked Bag",
+    "category": "luggage",
+    "price": 30.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "Economy",
+    "name": "Travel Insurance",
+    "category": "insurance",
+    "price": 24.0,
+    "included": false
+  },
+  {
+    "flight_number": "AS530",
+    "tier": "Economy",
+    "name": "Beverages & Snacks",
+    "category": "food",
+    "price": 10.0,
+    "included": false
+  }
+]

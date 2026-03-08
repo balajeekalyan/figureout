@@ -1,0 +1,47 @@
+[
+  {
+    "place_id": 1,
+    "fees": [
+      { "type": "Service Fee", "amount": "3%", "description": "A platform service fee charged to cover booking infrastructure, 24/7 customer support, and secure payment processing." },
+      { "type": "Convenience Fee", "amount": "$2.50", "description": "A flat convenience fee for online booking access, instant confirmation, and mobile ticket delivery." },
+      { "type": "Tourism Levy", "amount": "1%", "description": "A New York City tourism levy collected on behalf of the local government to support tourism infrastructure and public services." },
+      { "type": "Sales Tax", "amount": "8%", "description": "New York State and City combined sales tax of 8% applied to all taxable activity bookings." }
+    ]
+  },
+  {
+    "place_id": 2,
+    "fees": [
+      { "type": "Service Fee", "amount": "3%", "description": "A platform service fee covering booking operations, customer support, and secure payment handling for all Paris bookings." },
+      { "type": "Convenience Fee", "amount": "€2.00", "description": "A flat convenience fee for online booking, instant e-ticket delivery, and multilingual customer support." },
+      { "type": "Tourism Tax", "amount": "1.5%", "description": "The French taxe de séjour (tourist tax) collected to fund local tourism infrastructure and cultural preservation in Paris." },
+      { "type": "VAT", "amount": "10%", "description": "French Value Added Tax (TVA) at the reduced rate applicable to tourism and leisure activities in France." }
+    ]
+  },
+  {
+    "place_id": 3,
+    "fees": [
+      { "type": "Service Fee", "amount": "3%", "description": "A platform service fee for booking management, English-language customer support, and secure international payment processing." },
+      { "type": "Convenience Fee", "amount": "¥300", "description": "A flat convenience fee for online booking access, instant QR ticket delivery, and 24/7 traveler support." },
+      { "type": "Tourism Contribution", "amount": "1%", "description": "A contribution to the Tokyo Tourism Fund supporting sustainable tourism, city infrastructure, and cultural experiences." },
+      { "type": "Consumption Tax", "amount": "10%", "description": "Japan's national Consumption Tax (消費税) applied to all goods and services including tourism activities." }
+    ]
+  },
+  {
+    "place_id": 4,
+    "fees": [
+      { "type": "Service Fee", "amount": "3%", "description": "A platform service fee covering booking technology, customer support, and secure payment processing for all London activities." },
+      { "type": "Convenience Fee", "amount": "£2.00", "description": "A flat convenience fee for instant online booking, mobile ticket delivery, and dedicated travel support." },
+      { "type": "Tourism Levy", "amount": "1%", "description": "A London tourism levy collected to support Visit London, public transportation improvements, and cultural initiatives." },
+      { "type": "VAT", "amount": "20%", "description": "UK Value Added Tax at the standard rate of 20% applied to all tourism and leisure services in England." }
+    ]
+  },
+  {
+    "place_id": 5,
+    "fees": [
+      { "type": "Service Fee", "amount": "3%", "description": "A platform service fee covering booking infrastructure, Australian-based customer support, and secure payment processing." },
+      { "type": "Convenience Fee", "amount": "A$3.00", "description": "A flat convenience fee for online booking, instant e-ticket delivery, and 24/7 traveler assistance." },
+      { "type": "Tourism Levy", "amount": "1%", "description": "A New South Wales tourism levy collected to fund Destination NSW, attraction maintenance, and visitor services." },
+      { "type": "GST", "amount": "10%", "description": "Australia's Goods and Services Tax of 10% applied to all commercial tourism and leisure activities." }
+    ]
+  }
+]

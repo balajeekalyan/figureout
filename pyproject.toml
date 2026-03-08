@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "figureout"
+version = "0.1.0"
+description = "FigureOut - a domain-agnostic LLM role-routing engine"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+dependencies = ["fastmcp", "openai", "google-genai", "google-api-core", "anthropic", "python-dotenv"]
+
+[project.optional-dependencies]
+dev = ["pytest"]

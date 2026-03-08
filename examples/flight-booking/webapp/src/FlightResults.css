@@ -1,0 +1,91 @@
+.flight-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.flight-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: #fff;
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.flight-carrier {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.flight-number {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.flight-route {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.flight-endpoint {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.flight-airport {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.flight-city {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.flight-datetime {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.flight-arrow {
+  font-size: 1.5rem;
+  color: #999;
+}
+
+.flight-prices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.flight-price-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid #2563eb;
+  border-radius: 4px;
+  color: #2563eb;
+  background: #eff6ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.flight-price-link:hover {
+  background: #2563eb;
+  color: #fff;
+}

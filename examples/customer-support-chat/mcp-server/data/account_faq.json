@@ -1,0 +1,50 @@
+[
+  {
+    "id": "acc-001",
+    "question": "How do I reset my password?",
+    "answer": "Go to the login page and click 'Forgot Password'. Enter your registered email address and we'll send you a password reset link. The link expires in 24 hours. Check your spam folder if you don't see it in your inbox.",
+    "tags": ["password", "reset", "forgot", "login"]
+  },
+  {
+    "id": "acc-002",
+    "question": "How do I update my email address?",
+    "answer": "Log in to your account, navigate to Settings > Profile, and click 'Edit' next to your email address. Enter the new email and click Save. You'll receive a verification link at the new address — the change takes effect once verified.",
+    "tags": ["email", "profile", "update", "change"]
+  },
+  {
+    "id": "acc-003",
+    "question": "How do I enable two-factor authentication?",
+    "answer": "Go to Settings > Security and toggle on Two-Factor Authentication. You can choose to receive codes via SMS or an authenticator app such as Google Authenticator or Authy. We recommend using an authenticator app for better security.",
+    "tags": ["two-factor", "2fa", "security", "authentication"]
+  },
+  {
+    "id": "acc-004",
+    "question": "How do I delete my account?",
+    "answer": "Account deletion is permanent and cannot be undone. To delete your account, go to Settings > Account > Delete Account. You'll be asked to confirm your password and acknowledge that all your data will be permanently removed. If you have an active subscription, cancel it first.",
+    "tags": ["delete", "account", "close", "remove"]
+  },
+  {
+    "id": "acc-005",
+    "question": "How do I change my username?",
+    "answer": "Go to Settings > Profile and click 'Edit' next to your username. Usernames must be 3–20 characters, can contain letters, numbers, and underscores, and must be unique. You can change your username once every 30 days.",
+    "tags": ["username", "profile", "change", "edit"]
+  },
+  {
+    "id": "acc-006",
+    "question": "Why is my account suspended?",
+    "answer": "Accounts are suspended for violations of our Terms of Service, suspicious activity, or at the request of the account holder. You should have received an email explaining the reason. If you believe this is an error, contact our support team with your account email and we'll review it within 2 business days.",
+    "tags": ["suspended", "banned", "locked", "blocked", "account"]
+  },
+  {
+    "id": "acc-007",
+    "question": "I can't log in to my account. What should I do?",
+    "answer": "First, ensure you're using the correct email and password. Try resetting your password if you've forgotten it. Clear your browser cache and cookies, then try again. If two-factor authentication is enabled, make sure your authenticator app is synced to the correct time. If the issue persists, contact support.",
+    "tags": ["login", "sign in", "can't access", "locked out"]
+  },
+  {
+    "id": "acc-008",
+    "question": "How do I update my profile picture?",
+    "answer": "Go to Settings > Profile and click on your current profile picture or the camera icon. Upload an image in JPG, PNG, or GIF format, no larger than 5MB. The image will be cropped to a square — you can adjust the crop before saving.",
+    "tags": ["profile picture", "avatar", "photo", "image"]
+  }
+]
