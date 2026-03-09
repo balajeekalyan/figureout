@@ -1,0 +1,143 @@
+.seat-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.cockpit {
+  width: 55%;
+  padding: 0.5rem;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(to bottom, #1e293b, #334155);
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #cbd5e1;
+  border-radius: 40% 40% 0 0;
+}
+
+.col-headers {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.row-number-spacer {
+  width: 1.5rem;
+}
+
+.col-label {
+  width: 2rem;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.aisle-label {
+  width: 1.5rem;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.seats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.row-number {
+  width: 1.5rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #666;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.aisle {
+  width: 1.5rem;
+}
+
+.seat {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ccc;
+  color: #555;
+  font-size: 0.75rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.seat:hover {
+  background: #bbb;
+  transform: scale(1.1);
+}
+
+.seat.selected {
+  background: #22c55e;
+  color: #fff;
+}
+
+.seat.selected:hover {
+  background: #16a34a;
+}
+
+.seat.sold {
+  background: #374151;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.seat.sold:hover {
+  background: #374151;
+  transform: none;
+}
+
+.seat-legend {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.seat-sample {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 4px;
+}
+
+.seat-sample.available {
+  background: #ccc;
+}
+
+.seat-sample.selected {
+  background: #22c55e;
+}
+
+.seat-sample.sold {
+  background: #374151;
+}

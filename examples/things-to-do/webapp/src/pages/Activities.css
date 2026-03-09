@@ -1,0 +1,145 @@
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.activity-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.activity-card--expanded {
+  border-color: #2563eb;
+}
+
+.activity-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+}
+
+.activity-card-header:hover {
+  background: #f9fafb;
+}
+
+.activity-card-info {
+  flex: 1;
+}
+
+.activity-card-name {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.activity-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #555;
+  align-items: center;
+}
+
+.activity-type-tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  background: #f0f9ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #1e40af;
+}
+
+.activity-price {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.activity-expand-icon {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-left: 1rem;
+}
+
+.activity-booking-panel {
+  border-top: 1px solid #e0e0e0;
+  padding: 1.25rem;
+  background: #fafafa;
+}
+
+.activity-description {
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+.booking-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.booking-fields .filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.booking-fields .filter-field label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.booking-fields select {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+}
+
+.ticket-counter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ticket-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket-btn:hover {
+  background: #f3f4f6;
+}
+
+.ticket-count {
+  min-width: 24px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.booking-total {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.75rem;
+}

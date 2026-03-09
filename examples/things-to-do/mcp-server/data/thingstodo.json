@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "place_id": 1,
+    "name": "Statue of Liberty & Ellis Island Tour",
+    "type": "Sightseeing",
+    "description": "Sail to Liberty Island and explore the iconic Statue of Liberty up close. Visit Ellis Island's Immigration Museum and learn the stories of millions who passed through America's golden door.",
+    "duration": "4 hours",
+    "price_per_ticket": 29.00,
+    "city": "New York City",
+    "country": "USA",
+    "details": [
+      { "date": "2026-02-20", "times": ["09:00", "11:00", "13:00"] },
+      { "date": "2026-02-21", "times": ["09:00", "11:00", "14:00"] },
+      { "date": "2026-02-22", "times": ["10:00", "13:00", "15:00"] }
+    ]
+  },
+  {
+    "id": 2,
+    "place_id": 1,
+    "name": "Central Park Guided Bicycle Tour",
+    "type": "Adventure",
+    "description": "Explore the 843-acre urban oasis of Central Park on a guided bicycle tour. See iconic landmarks like Bethesda Fountain, the Bow Bridge, and Strawberry Fields with an expert local guide.",
+    "duration": "2.5 hours",
+    "price_per_ticket": 49.00,
+    "city": "New York City",
+    "country": "USA",
+    "details": [
+      { "date": "2026-02-20", "times": ["09:00", "11:00", "14:00"] },
+      { "date": "2026-02-21", "times": ["09:30", "12:00", "15:00"] },
+      { "date": "2026-02-22", "times": ["10:00", "13:00", "16:00"] }
+    ]
+  },
+  {
+    "id": 3,
+    "place_id": 1,
+    "name": "Metropolitan Museum of Art Skip-the-Line",
+    "type": "Cultural",
+    "description": "Skip the lines and explore one of the world's greatest art collections. Spanning 5,000 years of human creativity, the Met houses Egyptian artifacts, European masterpieces, and American art.",
+    "duration": "3 hours",
+    "price_per_ticket": 35.00,
+    "city": "New York City",
+    "country": "USA",
+    "details": [
+      { "date": "2026-02-20", "times": ["10:00", "13:00", "15:00"] },
+      { "date": "2026-02-21", "times": ["10:00", "13:00", "16:00"] },
+      { "date": "2026-02-22", "times": ["10:00", "13:00", "15:00"] }
+    ]
+  },
+  {
+    "id": 4,
+    "place_id": 1,
+    "name": "NYC Food Tour: Greenwich Village",
+    "type": "Food & Drink",
+    "description": "Taste your way through Greenwich Village, one of New York's most storied neighborhoods. Sample authentic pizza, artisan cheeses, craft chocolates, and iconic NYC bagels from legendary local spots.",
+    "duration": "3 hours",
+    "price_per_ticket": 89.00,
+    "city": "New York City",
+    "country": "USA",
+    "details": [
+      { "date": "2026-02-20", "times": ["12:00", "15:00"] },
+      { "date": "2026-02-21", "times": ["12:00", "15:00"] },
+      { "date": "2026-02-22", "times": ["12:00", "15:00"] }
+    ]
+  },
+  {
+    "id": 5,
+    "place_id": 1,
+    "name": "Brooklyn Bridge Photography Walk",
+    "type": "Sightseeing",
+    "description": "Walk the iconic Brooklyn Bridge with a professional photographer who will guide you to the best spots and angles. Cross between Manhattan and Brooklyn capturing stunning skyline views.",
+    "duration": "2 hours",
+    "price_per_ticket": 39.00,
+    "city": "New York City",
+    "country": "USA",
+    "details": [
+      { "date": "2026-02-20", "times": ["07:00", "17:00", "19:00"] },
+      { "date": "2026-02-21", "times": ["07:00", "17:00", "19:00"] },
+      { "date": "2026-02-22", "times": ["07:00", "17:00", "19:00"] }
+    ]
+  },
+  {
+    "id": 6,
+    "place_id": 1,
+    "name": "NYC Pottery Workshop",
+    "type": "Workshop",
+    "description": "Learn the art of pottery in a welcoming Brooklyn studio. Master basic throwing techniques, trim your piece, and leave with a handmade creation that gets fired and shipped to you.",
+    "duration": "2 hours",
+    "price_per_ticket": 75.00,
+    "city": "New York City",
+    "country": "USA",
+    "details": [
+      { "date": "2026-02-20", "times": ["11:00", "14:00", "18:00"] },
+      { "date": "2026-02-21", "times": ["11:00", "14:00", "18:00"] },
+      { "date": "2026-02-22", "times": ["11:00", "14:00", "18:00"] }
+    ]
+  },
+  {
+    "id": 7,
+    "place_id": 2,
+    "name": "Eiffel Tower Summit Priority Access",
+    "type": "Sightseeing",
+    "description": "Skip the queues with priority access to the Eiffel Tower and ascend to the summit for breathtaking 360-degree views of Paris. Experience the magic of the City of Light from above.",
+    "duration": "2 hours",
+    "price_per_ticket": 55.00,
+    "city": "Paris",
+    "country": "France",
+    "details": [
+      { "date": "2026-02-20", "times": ["09:30", "11:30", "14:00", "16:00"] },
+      { "date": "2026-02-21", "times": ["09:30", "11:30", "14:00", "16:00"] },
+      { "date": "2026-02-22", "times": ["10:00", "12:00", "14:30", "16:30"] }
+    ]
+  },
+  {
+    "id": 8,
+    "place_id": 2,
+    "name": "Louvre Museum Guided Tour",
+    "type": "Cultural",
+    "description": "Discover the world's largest art museum with an expert guide. See the Mona Lisa, Venus de Milo, and Winged Victory while learning the fascinating stories behind these iconic masterpieces.",
+    "duration": "3 hours",
+    "price_per_ticket": 65.00,
+    "city": "Paris",
+    "country": "France",
+    "details": [
+      { "date": "2026-02-20", "times": ["09:00", "11:00", "14:00"] },
+      { "date": "2026-02-21", "times": ["09:00", "11:00", "14:00"] },
+      { "date": "2026-02-22", "times": ["09:00", "11:00", "14:00"] }
+    ]
+  },
+  {
+    "id": 9,
+    "place_id": 2,
+    "name": "Paris Gourmet Food & Wine Tour",
+    "type": "Food & Drink",
+    "description": "Indulge in authentic Parisian gastronomy on this exclusive tasting tour. Sample artisan cheeses, fresh baguettes, macarons, foie gras, and wine at iconic markets and specialty shops.",
+    "duration": "3.5 hours",
+    "price_per_ticket": 110.00,
+    "city": "Paris",
+    "country": "France",
+    "details": [
+      { "date": "2026-02-20", "times": ["10:00", "14:00"] },
+      { "date": "2026-02-21", "times": ["10:00", "14:00"] },
+      { "date": "2026-02-22", "times": ["10:00", "14:00"] }
+    ]
+  },
+  {
+    "id": 10,
+    "place_id": 2,
+    "name": "Palace of Versailles Day Trip",
+    "type": "Sightseeing",
+    "description": "Escape Paris for a day at the magnificent Palace of Versailles. Explore the royal apartments, Hall of Mirrors, and stunning gardens of Louis XIV's legendary residence.",
+    "duration": "7 hours",
+    "price_per_ticket": 85.00,
+    "city": "Paris",
+    "country": "France",
+    "details": [
+      { "date": "2026-02-20", "times": ["08:30"] },
+      { "date": "2026-02-21", "times": ["08:30"] },
+      { "date": "2026-02-22", "times": ["08:30"] }
+    ]
+  },
+  {
+    "id": 11,
+    "place_id": 2,
+    "name": "Montmartre Art & History Walk",
+    "type": "Cultural",
+    "description": "Explore the bohemian hilltop village of Montmartre, home to the Sacré-Cœur Basilica and the legendary artistic community that inspired Picasso, Renoir, and Van Gogh.",
+    "duration": "2.5 hours",
+    "price_per_ticket": 42.00,
+    "city": "Paris",
+    "country": "France",
+    "details": [
+      { "date": "2026-02-20", "times": ["10:00", "14:00", "17:00"] },
+      { "date": "2026-02-21", "times": ["10:00", "14:00", "17:00"] },
+      { "date": "2026-02-22", "times": ["10:00", "14:00", "17:00"] }
+    ]
+  },
+  {
+    "id": 12,
+    "place_id": 2,
+    "name": "French Pastry Baking Class",
+    "type": "Workshop",
+    "description": "Learn to make authentic French pastries under the guidance of a professional pastry chef. Master croissants, éclairs, and macarons in a fully equipped Parisian kitchen.",
+    "duration": "3 hours",
+    "price_per_ticket": 125.00,
+    "city": "Paris",
+    "country": "France",
+    "details": [
+      { "date": "2026-02-20", "times": ["09:00", "14:00"] },
+      { "date": "2026-02-21", "times": ["09:00", "14:00"] },
+      { "date": "2026-02-22", "times": ["09:00", "14:00"] }
+    ]
+  },
+  {
+    "id": 13,
+    "place_id": 3,
+    "name": "Senso-ji Temple & Asakusa Tour",
+    "type": "Cultural",
+    "description": "Visit Tokyo's oldest temple and explore the historic Asakusa district. Walk through the iconic Nakamise shopping street, try traditional street food, and discover centuries of Japanese culture.",
+    "duration": "3 hours",
+    "price_per_ticket": 38.00,
+    "city": "Tokyo",
+    "country": "Japan",
+    "details": [
+      { "date": "2026-02-20", "times": ["09:00", "11:00", "14:00"] },
+      { "date": "2026-02-21", "times": ["09:00", "11:00", "14:00"] },
+      { "date": "2026-02-22", "times": ["09:00", "11:00", "14:00"] }
+    ]
+  },
+  {
+    "id": 14,
+    "place_id": 3,
+    "name": "Tokyo Sushi Making Masterclass",
+    "type": "Workshop",
+    "description": "Learn the art of sushi from a professional chef in a traditional Tokyo setting. Master nigiri, maki, and temaki techniques, then enjoy your creations with miso soup and sake.",
+    "duration": "2.5 hours",
+    "price_per_ticket": 95.00,
+    "city": "Tokyo",
+    "country": "Japan",
+    "details": [
+      { "date": "2026-02-20", "times": ["10:00", "14:00", "18:00"] },
+      { "date": "2026-02-21", "times": ["10:00", "14:00", "18:00"] },
+      { "date": "2026-02-22", "times": ["10:00", "14:00", "18:00"] }
+    ]
+  },
+  {
+    "id": 15,
+    "place_id": 3,
+    "name": "Shibuya & Harajuku Street Culture Tour",
+    "type": "Sightseeing",
+    "description": "Experience Tokyo's iconic pop culture at the famous Shibuya Crossing and fashion-forward Harajuku district. Explore Takeshita Street, visit Meiji Shrine, and witness Tokyo's unique youth subcultures.",
+    "duration": "4 hours",
+    "price_per_ticket": 55.00,
+    "city": "Tokyo",
+    "country": "Japan",
+    "details": [
+      { "date": "2026-02-20", "times": ["11:00", "14:00"] },
+      { "date": "2026-02-21", "times": ["11:00", "14:00"] },
+      { "date": "2026-02-22", "times": ["11:00", "14:00"] }
+    ]
+  },
+  {
+    "id": 16,
+    "place_id": 3,
+    "name": "Tsukiji Outer Market Food Tour",
+    "type": "Food & Drink",
+    "description": "Taste your way through the legendary Tsukiji Outer Market. Sample the freshest sushi, tamagoyaki, matcha sweets, and street foods while learning about Tokyo's incredible fish and food culture.",
+    "duration": "2.5 hours",
+    "price_per_ticket": 72.00,
+    "city": "Tokyo",
+    "country": "Japan",
+    "details": [
+      { "date": "2026-02-20", "times": ["07:30", "09:30"] },
+      { "date": "2026-02-21", "times": ["07:30", "09:30"] },
+      { "date": "2026-02-22", "times": ["07:30", "09:30"] }
+    ]
+  },
+  {
+    "id": 17,
+    "place_id": 3,
+    "name": "Mount Fuji & Hakone Day Trip",
+    "type": "Nature",
+    "description": "Journey to the iconic Mount Fuji and the scenic Hakone region. Enjoy stunning views of the sacred volcano, cruise on Lake Ashi, and experience the traditional ryokan culture.",
+    "duration": "10 hours",
+    "price_per_ticket": 120.00,
+    "city": "Tokyo",
+    "country": "Japan",
+    "details": [
+      { "date": "2026-02-20", "times": ["07:00"] },
+      { "date": "2026-02-21", "times": ["07:00"] },
+      { "date": "2026-02-22", "times": ["07:00"] }
+    ]
+  },
+  {
+    "id": 18,
+    "place_id": 3,
+    "name": "Tokyo Night Cycling Adventure",
+    "type": "Adventure",
+    "description": "Discover Tokyo after dark on a thrilling night cycling tour. Ride through illuminated districts, past glowing temples, and along the Sumida River for an unforgettable view of the city's nightlife.",
+    "duration": "3 hours",
+    "price_per_ticket": 60.00,
+    "city": "Tokyo",
+    "country": "Japan",
+    "details": [
+      { "date": "2026-02-20", "times": ["19:00", "20:00"] },
+      { "date": "2026-02-21", "times": ["19:00", "20:00"] },
+      { "date": "2026-02-22", "times": ["19:00", "20:00"] }
+    ]
+  },
+  {
+    "id": 19,
+    "place_id": 4,
+    "name": "Tower of London & Crown Jewels Tour",
+    "type": "Cultural",
+    "description": "Explore nearly 1,000 years of royal history at the Tower of London. See the legendary Crown Jewels, meet the famous Yeoman Warders (Beefeaters), and discover the tower's dark and fascinating past.",
+    "duration": "2.5 hours",
+    "price_per_ticket": 45.00,
+    "city": "London",
+    "country": "UK",
+    "details": [
+      { "date": "2026-02-20", "times": ["09:00", "11:00", "13:00", "15:00"] },
+      { "date": "2026-02-21", "times": ["09:00", "11:00", "13:00", "15:00"] },
+      { "date": "2026-02-22", "times": ["09:00", "11:00", "13:00", "15:00"] }
+    ]
+  },
+  {
+    "id": 20,
+    "place_id": 4,
+    "name": "Thames River Sightseeing Cruise",
+    "type": "Sightseeing",
+    "description": "Cruise along the River Thames and see London's most famous landmarks from the water. Admire Tower Bridge, the Tate Modern, Shakespeare's Globe, and the Houses of Parliament.",
+    "duration": "1.5 hours",
+    "price_per_ticket": 28.00,
+    "city": "London",
+    "country": "UK",
+    "details": [
+      { "date": "2026-02-20", "times": ["10:00", "12:00", "14:00", "16:00"] },
+      { "date": "2026-02-21", "times": ["10:00", "12:00", "14:00", "16:00"] },
+      { "date": "2026-02-22", "times": ["10:00", "12:00", "14:00", "16:00"] }
+    ]
+  },
+  {
+    "id": 21,
+    "place_id": 4,
+    "name": "British Museum Highlights Tour",
+    "type": "Cultural",
+    "description": "Discover treasures from ancient civilizations at the British Museum. See the Rosetta Stone, Elgin Marbles, Egyptian mummies, and the Lewis Chessmen with an expert guide.",
+    "duration": "2 hours",
+    "price_per_ticket": 40.00,
+    "city": "London",
+    "country": "UK",
+    "details": [
+      { "date": "2026-02-20", "times": ["10:00", "13:00", "15:30"] },
+      { "date": "2026-02-21", "times": ["10:00", "13:00", "15:30"] },
+      { "date": "2026-02-22", "times": ["10:00", "13:00", "15:30"] }
+    ]
+  },
+  {
+    "id": 22,
+    "place_id": 4,
+    "name": "London Street Food Tour: Borough Market",
+    "type": "Food & Drink",
+    "description": "Indulge in London's vibrant food scene at Borough Market, one of the oldest and most famous food markets in the world. Sample artisan cheeses, freshly baked goods, global street food, and British ales.",
+    "duration": "2 hours",
+    "price_per_ticket": 65.00,
+    "city": "London",
+    "country": "UK",
+    "details": [
+      { "date": "2026-02-20", "times": ["11:00", "14:00"] },
+      { "date": "2026-02-21", "times": ["11:00", "14:00"] },
+      { "date": "2026-02-22", "times": ["11:00", "14:00"] }
+    ]
+  },
+  {
+    "id": 23,
+    "place_id": 4,
+    "name": "Hyde Park & Kensington Gardens Walk",
+    "type": "Nature",
+    "description": "Stroll through two of London's most beautiful Royal Parks. See Kensington Palace, the Diana Memorial Fountain, the Serpentine Gallery, and the magnificent Albert Memorial.",
+    "duration": "2 hours",
+    "price_per_ticket": 22.00,
+    "city": "London",
+    "country": "UK",
+    "details": [
+      { "date": "2026-02-20", "times": ["10:00", "13:00", "15:00"] },
+      { "date": "2026-02-21", "times": ["10:00", "13:00", "15:00"] },
+      { "date": "2026-02-22", "times": ["10:00", "13:00", "15:00"] }
+    ]
+  },
+  {
+    "id": 24,
+    "place_id": 4,
+    "name": "London Cocktail Masterclass",
+    "type": "Workshop",
+    "description": "Learn to craft classic and contemporary cocktails with a professional mixologist in London's trendy Shoreditch district. Take home new skills and two perfectly mixed cocktails.",
+    "duration": "2 hours",
+    "price_per_ticket": 80.00,
+    "city": "London",
+    "country": "UK",
+    "details": [
+      { "date": "2026-02-20", "times": ["17:00", "19:00"] },
+      { "date": "2026-02-21", "times": ["17:00", "19:00"] },
+      { "date": "2026-02-22", "times": ["17:00", "19:00"] }
+    ]
+  },
+  {
+    "id": 25,
+    "place_id": 5,
+    "name": "Sydney Opera House Backstage Tour",
+    "type": "Cultural",
+    "description": "Go behind the scenes of one of the world's most iconic buildings. Explore dressing rooms, stages, and hidden spaces of the Sydney Opera House with exclusive backstage access.",
+    "duration": "1.5 hours",
+    "price_per_ticket": 42.00,
+    "city": "Sydney",
+    "country": "Australia",
+    "details": [
+      { "date": "2026-02-20", "times": ["09:00", "10:30", "12:00"] },
+      { "date": "2026-02-21", "times": ["09:00", "10:30", "12:00"] },
+      { "date": "2026-02-22", "times": ["09:00", "10:30", "12:00"] }
+    ]
+  },
+  {
+    "id": 26,
+    "place_id": 5,
+    "name": "Sydney Harbour Bridge Climb",
+    "type": "Adventure",
+    "description": "Climb to the summit of the iconic Sydney Harbour Bridge for unparalleled 360-degree views of the harbour, Opera House, and city skyline. An unforgettable Australian adventure.",
+    "duration": "3.5 hours",
+    "price_per_ticket": 198.00,
+    "city": "Sydney",
+    "country": "Australia",
+    "details": [
+      { "date": "2026-02-20", "times": ["07:00", "10:00", "13:00", "16:00", "19:00"] },
+      { "date": "2026-02-21", "times": ["07:00", "10:00", "13:00", "16:00", "19:00"] },
+      { "date": "2026-02-22", "times": ["07:00", "10:00", "13:00", "16:00", "19:00"] }
+    ]
+  },
+  {
+    "id": 27,
+    "place_id": 5,
+    "name": "Bondi to Coogee Coastal Walk",
+    "type": "Nature",
+    "description": "Experience one of Australia's most scenic coastal walks from iconic Bondi Beach to Coogee. Enjoy stunning ocean views, dramatic cliffs, and pristine beaches along this legendary 6km trail.",
+    "duration": "3 hours",
+    "price_per_ticket": 35.00,
+    "city": "Sydney",
+    "country": "Australia",
+    "details": [
+      { "date": "2026-02-20", "times": ["07:00", "09:00", "13:00"] },
+      { "date": "2026-02-21", "times": ["07:00", "09:00", "13:00"] },
+      { "date": "2026-02-22", "times": ["07:00", "09:00", "13:00"] }
+    ]
+  },
+  {
+    "id": 28,
+    "place_id": 5,
+    "name": "Sydney Seafood & Waterfront Food Tour",
+    "type": "Food & Drink",
+    "description": "Sample Sydney's world-famous seafood and local produce along the stunning waterfront. Taste fresh oysters, prawns, barramundi, and Australian wines while enjoying Harbour views.",
+    "duration": "3 hours",
+    "price_per_ticket": 95.00,
+    "city": "Sydney",
+    "country": "Australia",
+    "details": [
+      { "date": "2026-02-20", "times": ["11:00", "14:00"] },
+      { "date": "2026-02-21", "times": ["11:00", "14:00"] },
+      { "date": "2026-02-22", "times": ["11:00", "14:00"] }
+    ]
+  },
+  {
+    "id": 29,
+    "place_id": 5,
+    "name": "Blue Mountains Hiking & Wildlife Tour",
+    "type": "Adventure",
+    "description": "Venture into the stunning Blue Mountains World Heritage wilderness. Hike through ancient eucalyptus forests, see the Three Sisters rock formation, and spot native Australian wildlife.",
+    "duration": "10 hours",
+    "price_per_ticket": 115.00,
+    "city": "Sydney",
+    "country": "Australia",
+    "details": [
+      { "date": "2026-02-20", "times": ["07:30"] },
+      { "date": "2026-02-21", "times": ["07:30"] },
+      { "date": "2026-02-22", "times": ["07:30"] }
+    ]
+  },
+  {
+    "id": 30,
+    "place_id": 5,
+    "name": "Aboriginal Culture & Art Workshop",
+    "type": "Workshop",
+    "description": "Connect with Australia's ancient indigenous culture through an immersive art and storytelling workshop led by Aboriginal elders. Create your own dot painting and learn Dreamtime stories.",
+    "duration": "2.5 hours",
+    "price_per_ticket": 85.00,
+    "city": "Sydney",
+    "country": "Australia",
+    "details": [
+      { "date": "2026-02-20", "times": ["10:00", "14:00"] },
+      { "date": "2026-02-21", "times": ["10:00", "14:00"] },
+      { "date": "2026-02-22", "times": ["10:00", "14:00"] }
+    ]
+  }
+]

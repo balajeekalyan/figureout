@@ -1,0 +1,419 @@
+[
+    {
+        "id": 1,
+        "name": "The Little Armenia",
+        "cuisine": "Armenian",
+        "type": "Restaurant",
+        "dietary_options": ["vegetarian", "gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "New York, NY", "country": "USA", "hours": "11:00-22:00", "reservations": ["15:00"]},
+            {"date": "2026-02-21", "city": "New York, NY", "country": "USA", "hours": "11:00-22:00", "reservations": ["12:00", "18:00"]},
+            {"date": "2026-02-22", "city": "New York, NY", "country": "USA", "hours": "11:00-22:00", "reservations": ["13:00", "19:00"]}
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Sakura Sushi",
+        "cuisine": "Japanese",
+        "type": "Restaurant",
+        "dietary_options": ["gluten-free", "pescatarian"],
+        "details": [
+            {"date": "2026-02-20", "city": "Los Angeles, CA", "country": "USA", "hours": "12:00-23:00", "reservations": ["18:00", "20:00"]},
+            {"date": "2026-02-21", "city": "Los Angeles, CA", "country": "USA", "hours": "12:00-23:00", "reservations": ["12:30", "19:00"]},
+            {"date": "2026-02-22", "city": "Los Angeles, CA", "country": "USA", "hours": "12:00-23:00", "reservations": ["13:00", "20:30"]}
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Trattoria Bella",
+        "cuisine": "Italian",
+        "type": "Restaurant",
+        "dietary_options": ["vegetarian", "vegan"],
+        "details": [
+            {"date": "2026-02-20", "city": "Chicago, IL", "country": "USA", "hours": "11:30-22:30", "reservations": ["12:00", "18:30"]},
+            {"date": "2026-02-21", "city": "Chicago, IL", "country": "USA", "hours": "11:30-22:30", "reservations": ["13:00", "19:00"]},
+            {"date": "2026-02-22", "city": "Chicago, IL", "country": "USA", "hours": "11:30-22:30", "reservations": ["11:30", "17:30"]}
+        ]
+    },
+    {
+        "id": 4,
+        "name": "El Fogón",
+        "cuisine": "Mexican",
+        "type": "Restaurant",
+        "dietary_options": ["gluten-free", "vegetarian"],
+        "details": [
+            {"date": "2026-02-20", "city": "Austin, TX", "country": "USA", "hours": "10:00-23:00", "reservations": ["11:00", "19:00"]},
+            {"date": "2026-02-21", "city": "Austin, TX", "country": "USA", "hours": "10:00-23:00", "reservations": ["12:00", "18:00", "21:00"]},
+            {"date": "2026-02-22", "city": "Austin, TX", "country": "USA", "hours": "10:00-23:00", "reservations": ["10:30", "17:00"]}
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Golden Dragon",
+        "cuisine": "Chinese",
+        "type": "Restaurant",
+        "dietary_options": ["vegan", "nut-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "San Francisco, CA", "country": "USA", "hours": "11:00-22:00", "reservations": ["12:00", "18:00"]},
+            {"date": "2026-02-21", "city": "San Francisco, CA", "country": "USA", "hours": "11:00-22:00", "reservations": ["11:30", "19:30"]},
+            {"date": "2026-02-22", "city": "San Francisco, CA", "country": "USA", "hours": "11:00-22:00", "reservations": ["13:00", "20:00"]}
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Masala House",
+        "cuisine": "Indian",
+        "type": "Restaurant",
+        "dietary_options": ["vegan", "vegetarian", "halal", "gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "New York, NY", "country": "USA", "hours": "11:30-23:00", "reservations": ["12:00", "18:30", "21:00"]},
+            {"date": "2026-02-21", "city": "New York, NY", "country": "USA", "hours": "11:30-23:00", "reservations": ["13:00", "19:00"]},
+            {"date": "2026-02-22", "city": "New York, NY", "country": "USA", "hours": "11:30-23:00", "reservations": ["11:30", "17:30"]}
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Le Petit Bistro",
+        "cuisine": "French",
+        "type": "Restaurant",
+        "dietary_options": ["vegetarian", "dairy-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "Washington, DC", "country": "USA", "hours": "12:00-22:00", "reservations": ["12:30", "19:00"]},
+            {"date": "2026-02-21", "city": "Washington, DC", "country": "USA", "hours": "12:00-22:00", "reservations": ["13:00", "18:00"]},
+            {"date": "2026-02-22", "city": "Washington, DC", "country": "USA", "hours": "12:00-22:00", "reservations": ["12:00", "20:00"]}
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Seoul Kitchen",
+        "cuisine": "Korean",
+        "type": "Restaurant",
+        "dietary_options": ["gluten-free", "vegan"],
+        "details": [
+            {"date": "2026-02-20", "city": "Los Angeles, CA", "country": "USA", "hours": "11:00-22:30", "reservations": ["11:30", "18:00"]},
+            {"date": "2026-02-21", "city": "Los Angeles, CA", "country": "USA", "hours": "11:00-22:30", "reservations": ["12:00", "19:30"]},
+            {"date": "2026-02-22", "city": "Los Angeles, CA", "country": "USA", "hours": "11:00-22:30", "reservations": ["13:00", "20:00"]}
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Pho Saigon",
+        "cuisine": "Vietnamese",
+        "type": "Restaurant",
+        "dietary_options": ["gluten-free", "dairy-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "Houston, TX", "country": "USA", "hours": "10:00-21:30", "reservations": ["11:00", "17:00"]},
+            {"date": "2026-02-21", "city": "Houston, TX", "country": "USA", "hours": "10:00-21:30", "reservations": ["10:30", "18:00"]},
+            {"date": "2026-02-22", "city": "Houston, TX", "country": "USA", "hours": "10:00-21:30", "reservations": ["12:00", "19:00"]}
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Olive & Vine",
+        "cuisine": "Mediterranean",
+        "type": "Restaurant",
+        "dietary_options": ["vegan", "vegetarian", "gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "Miami, FL", "country": "USA", "hours": "11:00-23:00", "reservations": ["12:00", "19:00", "21:00"]},
+            {"date": "2026-02-21", "city": "Miami, FL", "country": "USA", "hours": "11:00-23:00", "reservations": ["13:00", "18:30"]},
+            {"date": "2026-02-22", "city": "Miami, FL", "country": "USA", "hours": "11:00-23:00", "reservations": ["11:30", "20:00"]}
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Bangkok Street",
+        "cuisine": "Thai",
+        "type": "Restaurant",
+        "dietary_options": ["vegan", "nut-free", "gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "Seattle, WA", "country": "USA", "hours": "11:30-22:00", "reservations": ["12:00", "18:00"]},
+            {"date": "2026-02-21", "city": "Seattle, WA", "country": "USA", "hours": "11:30-22:00", "reservations": ["11:30", "19:00"]},
+            {"date": "2026-02-22", "city": "Seattle, WA", "country": "USA", "hours": "11:30-22:00", "reservations": ["13:00", "20:00"]}
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Arepas y Más",
+        "cuisine": "Venezuelan",
+        "type": "Restaurant",
+        "dietary_options": ["gluten-free", "vegetarian"],
+        "details": [
+            {"date": "2026-02-20", "city": "Miami, FL", "country": "USA", "hours": "10:00-21:00", "reservations": ["11:00", "17:00"]},
+            {"date": "2026-02-21", "city": "Miami, FL", "country": "USA", "hours": "10:00-21:00", "reservations": ["10:30", "18:00"]},
+            {"date": "2026-02-22", "city": "Miami, FL", "country": "USA", "hours": "10:00-21:00", "reservations": ["12:00", "19:00"]}
+        ]
+    },
+    {
+        "id": 13,
+        "name": "The Kebab House",
+        "cuisine": "Turkish",
+        "type": "Restaurant",
+        "dietary_options": ["halal", "gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "Chicago, IL", "country": "USA", "hours": "11:00-23:00", "reservations": ["12:00", "19:00", "21:00"]},
+            {"date": "2026-02-21", "city": "Chicago, IL", "country": "USA", "hours": "11:00-23:00", "reservations": ["11:30", "18:00"]},
+            {"date": "2026-02-22", "city": "Chicago, IL", "country": "USA", "hours": "11:00-23:00", "reservations": ["13:00", "20:00"]}
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Jerk Shack",
+        "cuisine": "Jamaican",
+        "type": "Restaurant",
+        "dietary_options": ["dairy-free", "gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "Atlanta, GA", "country": "USA", "hours": "11:00-22:00", "reservations": ["11:30", "18:00"]},
+            {"date": "2026-02-21", "city": "Atlanta, GA", "country": "USA", "hours": "11:00-22:00", "reservations": ["12:00", "19:00"]},
+            {"date": "2026-02-22", "city": "Atlanta, GA", "country": "USA", "hours": "11:00-22:00", "reservations": ["13:00", "17:30"]}
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Nile Café",
+        "cuisine": "Ethiopian",
+        "type": "Restaurant",
+        "dietary_options": ["vegan", "vegetarian", "gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "Washington, DC", "country": "USA", "hours": "12:00-22:00", "reservations": ["12:30", "18:00"]},
+            {"date": "2026-02-21", "city": "Washington, DC", "country": "USA", "hours": "12:00-22:00", "reservations": ["13:00", "19:30"]},
+            {"date": "2026-02-22", "city": "Washington, DC", "country": "USA", "hours": "12:00-22:00", "reservations": ["12:00", "20:00"]}
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Paella & Co",
+        "cuisine": "Spanish",
+        "type": "Restaurant",
+        "dietary_options": ["pescatarian", "gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "New York, NY", "country": "USA", "hours": "12:00-23:00", "reservations": ["12:30", "19:00", "21:00"]},
+            {"date": "2026-02-21", "city": "New York, NY", "country": "USA", "hours": "12:00-23:00", "reservations": ["13:00", "18:30"]},
+            {"date": "2026-02-22", "city": "New York, NY", "country": "USA", "hours": "12:00-23:00", "reservations": ["12:00", "20:00"]}
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Feijoada Brasil",
+        "cuisine": "Brazilian",
+        "type": "Restaurant",
+        "dietary_options": ["gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "Boston, MA", "country": "USA", "hours": "11:00-22:00", "reservations": ["11:30", "18:00"]},
+            {"date": "2026-02-21", "city": "Boston, MA", "country": "USA", "hours": "11:00-22:00", "reservations": ["12:00", "19:00"]},
+            {"date": "2026-02-22", "city": "Boston, MA", "country": "USA", "hours": "11:00-22:00", "reservations": ["13:00", "17:30"]}
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Athens Taverna",
+        "cuisine": "Greek",
+        "type": "Restaurant",
+        "dietary_options": ["vegetarian", "pescatarian"],
+        "details": [
+            {"date": "2026-02-20", "city": "Denver, CO", "country": "USA", "hours": "11:30-22:00", "reservations": ["12:00", "18:30"]},
+            {"date": "2026-02-21", "city": "Denver, CO", "country": "USA", "hours": "11:30-22:00", "reservations": ["11:30", "19:00"]},
+            {"date": "2026-02-22", "city": "Denver, CO", "country": "USA", "hours": "11:30-22:00", "reservations": ["13:00", "20:00"]}
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Marrakech Nights",
+        "cuisine": "Moroccan",
+        "type": "Restaurant",
+        "dietary_options": ["halal", "vegan", "gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "San Francisco, CA", "country": "USA", "hours": "17:00-23:00", "reservations": ["17:30", "20:00"]},
+            {"date": "2026-02-21", "city": "San Francisco, CA", "country": "USA", "hours": "17:00-23:00", "reservations": ["18:00", "21:00"]},
+            {"date": "2026-02-22", "city": "San Francisco, CA", "country": "USA", "hours": "17:00-23:00", "reservations": ["17:00", "19:30"]}
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Pierogi Palace",
+        "cuisine": "Polish",
+        "type": "Restaurant",
+        "dietary_options": ["vegetarian"],
+        "details": [
+            {"date": "2026-02-20", "city": "Philadelphia, PA", "country": "USA", "hours": "11:00-21:00", "reservations": ["11:30", "17:00"]},
+            {"date": "2026-02-21", "city": "Philadelphia, PA", "country": "USA", "hours": "11:00-21:00", "reservations": ["12:00", "18:00"]},
+            {"date": "2026-02-22", "city": "Philadelphia, PA", "country": "USA", "hours": "11:00-21:00", "reservations": ["13:00", "19:00"]}
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Havana Grill",
+        "cuisine": "Cuban",
+        "type": "Restaurant",
+        "dietary_options": ["dairy-free", "gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "Miami, FL", "country": "USA", "hours": "11:00-23:00", "reservations": ["12:00", "18:00", "21:00"]},
+            {"date": "2026-02-21", "city": "Miami, FL", "country": "USA", "hours": "11:00-23:00", "reservations": ["11:30", "19:00"]},
+            {"date": "2026-02-22", "city": "Miami, FL", "country": "USA", "hours": "11:00-23:00", "reservations": ["13:00", "20:00"]}
+        ]
+    },
+    {
+        "id": 22,
+        "name": "NYC Street Food Festival",
+        "cuisine": "International",
+        "type": "Food Festival",
+        "dietary_options": ["vegan", "vegetarian", "gluten-free"],
+        "details": [
+            {"date": "2026-02-14", "city": "New York, NY", "country": "USA", "hours": "10:00-20:00", "reservations": []},
+            {"date": "2026-02-15", "city": "New York, NY", "country": "USA", "hours": "10:00-20:00", "reservations": []}
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Taste of Chicago",
+        "cuisine": "International",
+        "type": "Food Festival",
+        "dietary_options": ["vegan", "vegetarian", "halal", "gluten-free"],
+        "details": [
+            {"date": "2026-03-07", "city": "Chicago, IL", "country": "USA", "hours": "11:00-21:00", "reservations": []},
+            {"date": "2026-03-08", "city": "Chicago, IL", "country": "USA", "hours": "11:00-21:00", "reservations": []}
+        ]
+    },
+    {
+        "id": 24,
+        "name": "LA Taco Festival",
+        "cuisine": "Mexican",
+        "type": "Food Festival",
+        "dietary_options": ["vegetarian", "gluten-free"],
+        "details": [
+            {"date": "2026-02-21", "city": "Los Angeles, CA", "country": "USA", "hours": "11:00-19:00", "reservations": []},
+            {"date": "2026-02-22", "city": "Los Angeles, CA", "country": "USA", "hours": "11:00-19:00", "reservations": []}
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Miami Spice Festival",
+        "cuisine": "Caribbean",
+        "type": "Food Festival",
+        "dietary_options": ["dairy-free", "gluten-free"],
+        "details": [
+            {"date": "2026-03-14", "city": "Miami, FL", "country": "USA", "hours": "12:00-22:00", "reservations": []},
+            {"date": "2026-03-15", "city": "Miami, FL", "country": "USA", "hours": "12:00-22:00", "reservations": []}
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Italian Pasta Making Masterclass",
+        "cuisine": "Italian",
+        "type": "Cooking Class",
+        "dietary_options": ["vegetarian"],
+        "details": [
+            {"date": "2026-02-12", "city": "New York, NY", "country": "USA", "hours": "18:00-21:00", "reservations": ["18:00"]},
+            {"date": "2026-02-19", "city": "New York, NY", "country": "USA", "hours": "18:00-21:00", "reservations": ["18:00"]}
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Sushi Rolling Workshop",
+        "cuisine": "Japanese",
+        "type": "Cooking Class",
+        "dietary_options": ["pescatarian", "gluten-free"],
+        "details": [
+            {"date": "2026-02-14", "city": "San Francisco, CA", "country": "USA", "hours": "17:00-20:00", "reservations": ["17:00"]},
+            {"date": "2026-02-21", "city": "San Francisco, CA", "country": "USA", "hours": "17:00-20:00", "reservations": ["17:00"]}
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Thai Street Food Cooking Class",
+        "cuisine": "Thai",
+        "type": "Cooking Class",
+        "dietary_options": ["vegan", "gluten-free"],
+        "details": [
+            {"date": "2026-02-15", "city": "Seattle, WA", "country": "USA", "hours": "11:00-14:00", "reservations": ["11:00"]},
+            {"date": "2026-02-22", "city": "Seattle, WA", "country": "USA", "hours": "11:00-14:00", "reservations": ["11:00"]}
+        ]
+    },
+    {
+        "id": 29,
+        "name": "Napa Valley Wine & Cheese Tasting",
+        "cuisine": "French",
+        "type": "Tasting Experience",
+        "dietary_options": ["vegetarian", "gluten-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "San Francisco, CA", "country": "USA", "hours": "14:00-17:00", "reservations": ["14:00", "15:30"]},
+            {"date": "2026-02-21", "city": "San Francisco, CA", "country": "USA", "hours": "14:00-17:00", "reservations": ["14:00", "15:30"]}
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Bourbon & BBQ Tasting Tour",
+        "cuisine": "American",
+        "type": "Tasting Experience",
+        "dietary_options": ["gluten-free"],
+        "details": [
+            {"date": "2026-02-14", "city": "Austin, TX", "country": "USA", "hours": "16:00-20:00", "reservations": ["16:00"]},
+            {"date": "2026-02-15", "city": "Austin, TX", "country": "USA", "hours": "16:00-20:00", "reservations": ["16:00"]}
+        ]
+    },
+    {
+        "id": 31,
+        "name": "DC Chocolate & Dessert Walk",
+        "cuisine": "International",
+        "type": "Tasting Experience",
+        "dietary_options": ["vegetarian"],
+        "details": [
+            {"date": "2026-02-21", "city": "Washington, DC", "country": "USA", "hours": "13:00-16:00", "reservations": ["13:00"]},
+            {"date": "2026-02-16", "city": "Washington, DC", "country": "USA", "hours": "13:00-16:00", "reservations": ["13:00"]}
+        ]
+    },
+    {
+        "id": 32,
+        "name": "Farm-to-Table Dinner Series",
+        "cuisine": "American",
+        "type": "Culinary Event",
+        "dietary_options": ["vegetarian", "vegan", "gluten-free"],
+        "details": [
+            {"date": "2026-02-13", "city": "Denver, CO", "country": "USA", "hours": "18:00-22:00", "reservations": ["18:00"]},
+            {"date": "2026-02-20", "city": "Denver, CO", "country": "USA", "hours": "18:00-22:00", "reservations": ["18:00"]}
+        ]
+    },
+    {
+        "id": 33,
+        "name": "Chef's Table Pop-Up",
+        "cuisine": "French",
+        "type": "Culinary Event",
+        "dietary_options": ["pescatarian"],
+        "details": [
+            {"date": "2026-02-14", "city": "New York, NY", "country": "USA", "hours": "19:00-23:00", "reservations": ["19:00"]},
+            {"date": "2026-02-15", "city": "Boston, MA", "country": "USA", "hours": "19:00-23:00", "reservations": ["19:00"]}
+        ]
+    },
+    {
+        "id": 34,
+        "name": "Midnight Ramen Crawl",
+        "cuisine": "Japanese",
+        "type": "Culinary Event",
+        "dietary_options": ["dairy-free"],
+        "details": [
+            {"date": "2026-02-20", "city": "Los Angeles, CA", "country": "USA", "hours": "21:00-01:00", "reservations": []},
+            {"date": "2026-02-15", "city": "Los Angeles, CA", "country": "USA", "hours": "21:00-01:00", "reservations": []}
+        ]
+    },
+    {
+        "id": 35,
+        "name": "Vegan Brunch Festival",
+        "cuisine": "International",
+        "type": "Culinary Event",
+        "dietary_options": ["vegan", "vegetarian", "gluten-free", "dairy-free", "nut-free"],
+        "details": [
+            {"date": "2026-02-22", "city": "Philadelphia, PA", "country": "USA", "hours": "10:00-15:00", "reservations": []},
+            {"date": "2026-03-01", "city": "Philadelphia, PA", "country": "USA", "hours": "10:00-15:00", "reservations": []}
+        ]
+    },
+    {
+        "id": 36,
+        "name": "Houston Crawfish Boil",
+        "cuisine": "Cajun",
+        "type": "Food Festival",
+        "dietary_options": ["gluten-free", "dairy-free"],
+        "details": [
+            {"date": "2026-03-07", "city": "Houston, TX", "country": "USA", "hours": "12:00-18:00", "reservations": []},
+            {"date": "2026-03-08", "city": "Houston, TX", "country": "USA", "hours": "12:00-18:00", "reservations": []}
+        ]
+    }
+]

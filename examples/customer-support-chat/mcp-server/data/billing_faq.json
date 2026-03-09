@@ -1,0 +1,50 @@
+[
+  {
+    "id": "bill-001",
+    "question": "What payment methods do you accept?",
+    "answer": "We accept Visa, Mastercard, American Express, Discover, PayPal, and Apple Pay. For annual plans, we also accept bank transfers. Cryptocurrency is not currently supported.",
+    "tags": ["payment", "methods", "credit card", "paypal", "apple pay"]
+  },
+  {
+    "id": "bill-002",
+    "question": "How do I download my invoice?",
+    "answer": "Go to Settings > Billing > Invoice History. Find the billing period you need and click the Download button next to it. Invoices are available in PDF format. If you need an invoice older than 24 months, contact support.",
+    "tags": ["invoice", "receipt", "download", "billing history"]
+  },
+  {
+    "id": "bill-003",
+    "question": "What is your refund policy?",
+    "answer": "We offer a 30-day money-back guarantee on all new subscriptions. Refunds are not available for partial months or renewals. To request a refund, contact support within 30 days of your initial purchase. Refunds are processed back to your original payment method within 5–10 business days.",
+    "tags": ["refund", "money back", "return", "cancel", "guarantee"]
+  },
+  {
+    "id": "bill-004",
+    "question": "How do I cancel my subscription?",
+    "answer": "Go to Settings > Billing > Subscription and click 'Cancel Subscription'. Your access continues until the end of the current billing period. You won't be charged again after cancellation. You can reactivate your subscription at any time from the same page.",
+    "tags": ["cancel", "subscription", "unsubscribe", "stop billing"]
+  },
+  {
+    "id": "bill-005",
+    "question": "Why did my payment fail?",
+    "answer": "Common reasons for payment failure include: insufficient funds, expired card, incorrect billing address, or the card issuer declining the transaction. Try updating your payment method in Settings > Billing > Payment Methods. If your card details are correct, contact your bank. We'll retry failed payments after 3 and 7 days.",
+    "tags": ["payment failed", "declined", "billing error", "charge failed"]
+  },
+  {
+    "id": "bill-006",
+    "question": "When am I billed?",
+    "answer": "You are billed on the same date each month (or year for annual plans) as your original sign-up date. For example, if you subscribed on the 15th, you'll be billed on the 15th of each month. You can view your next billing date in Settings > Billing > Subscription.",
+    "tags": ["billing cycle", "billing date", "renewal", "when charged"]
+  },
+  {
+    "id": "bill-007",
+    "question": "How do I apply a promo code?",
+    "answer": "Promo codes can be applied during checkout on the payment page. Enter your code in the 'Promo Code' field and click Apply. If you already have an active subscription, go to Settings > Billing and click 'Apply Promo Code'. Codes cannot be combined and must be used before their expiry date.",
+    "tags": ["promo code", "discount", "coupon", "voucher"]
+  },
+  {
+    "id": "bill-008",
+    "question": "Do you charge sales tax?",
+    "answer": "Sales tax or VAT is applied based on your billing address as required by local law. US customers in applicable states will see state sales tax. EU customers will see VAT at the rate applicable to their country. Your invoice will show a full breakdown of any taxes charged.",
+    "tags": ["tax", "vat", "sales tax", "pricing"]
+  }
+]

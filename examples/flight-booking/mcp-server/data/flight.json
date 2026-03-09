@@ -1,0 +1,902 @@
+[
+    {
+        "id": 1,
+        "carrier_name": "United Airlines",
+        "routes": [
+            {
+                "flight_number": "UA101",
+                "source_city": "Los Angeles",
+                "source_state": "California",
+                "source_airport_code": "LAX",
+                "source_depart_date": "2026-02-14",
+                "source_depart_time": "11:00",
+                "destination_city": "Newark",
+                "destination_state": "New Jersey",
+                "destination_airport_code": "EWR",
+                "destination_arrival_date": "2026-02-14",
+                "destination_arrival_time": "17:00",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 200
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 500
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 1000
+                    }
+                ]
+            },
+            {
+                "flight_number": "UA202",
+                "source_city": "San Francisco",
+                "source_state": "California",
+                "source_airport_code": "SFO",
+                "source_depart_date": "2026-02-15",
+                "source_depart_time": "08:30",
+                "destination_city": "Chicago",
+                "destination_state": "Illinois",
+                "destination_airport_code": "ORD",
+                "destination_arrival_date": "2026-02-15",
+                "destination_arrival_time": "14:45",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 180
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 450
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 850
+                    }
+                ]
+            },
+            {
+                "flight_number": "UA303",
+                "source_city": "Houston",
+                "source_state": "Texas",
+                "source_airport_code": "IAH",
+                "source_depart_date": "2026-02-16",
+                "source_depart_time": "06:15",
+                "destination_city": "Denver",
+                "destination_state": "Colorado",
+                "destination_airport_code": "DEN",
+                "destination_arrival_date": "2026-02-16",
+                "destination_arrival_time": "08:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 130
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 350
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 650
+                    }
+                ]
+            },
+            {
+                "flight_number": "UA404",
+                "source_city": "Newark",
+                "source_state": "New Jersey",
+                "source_airport_code": "EWR",
+                "source_depart_date": "2026-02-17",
+                "source_depart_time": "09:00",
+                "destination_city": "Miami",
+                "destination_state": "Florida",
+                "destination_airport_code": "MIA",
+                "destination_arrival_date": "2026-02-17",
+                "destination_arrival_time": "12:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 160
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 420
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 780
+                    }
+                ]
+            },
+            {
+                "flight_number": "UA505",
+                "source_city": "Chicago",
+                "source_state": "Illinois",
+                "source_airport_code": "ORD",
+                "source_depart_date": "2026-02-18",
+                "source_depart_time": "14:00",
+                "destination_city": "Seattle",
+                "destination_state": "Washington",
+                "destination_airport_code": "SEA",
+                "destination_arrival_date": "2026-02-18",
+                "destination_arrival_time": "16:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 190
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 480
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 900
+                    }
+                ]
+            },
+            {
+                "flight_number": "UA606",
+                "source_city": "Denver",
+                "source_state": "Colorado",
+                "source_airport_code": "DEN",
+                "source_depart_date": "2026-02-19",
+                "source_depart_time": "07:45",
+                "destination_city": "Washington",
+                "destination_state": "District of Columbia",
+                "destination_airport_code": "IAD",
+                "destination_arrival_date": "2026-02-19",
+                "destination_arrival_time": "13:15",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 210
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 520
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 950
+                    }
+                ]
+            },
+            {
+                "flight_number": "UA707",
+                "source_city": "Los Angeles",
+                "source_state": "California",
+                "source_airport_code": "LAX",
+                "source_depart_date": "2026-02-20",
+                "source_depart_time": "22:00",
+                "destination_city": "Honolulu",
+                "destination_state": "Hawaii",
+                "destination_airport_code": "HNL",
+                "destination_arrival_date": "2026-02-21",
+                "destination_arrival_time": "01:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 280
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 650
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 1200
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "carrier_name": "Delta Air Lines",
+        "routes": [
+            {
+                "flight_number": "DL110",
+                "source_city": "Atlanta",
+                "source_state": "Georgia",
+                "source_airport_code": "ATL",
+                "source_depart_date": "2026-02-14",
+                "source_depart_time": "07:00",
+                "destination_city": "New York",
+                "destination_state": "New York",
+                "destination_airport_code": "JFK",
+                "destination_arrival_date": "2026-02-14",
+                "destination_arrival_time": "09:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 150
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 400
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 720
+                    }
+                ]
+            },
+            {
+                "flight_number": "DL220",
+                "source_city": "Detroit",
+                "source_state": "Michigan",
+                "source_airport_code": "DTW",
+                "source_depart_date": "2026-02-15",
+                "source_depart_time": "10:15",
+                "destination_city": "Los Angeles",
+                "destination_state": "California",
+                "destination_airport_code": "LAX",
+                "destination_arrival_date": "2026-02-15",
+                "destination_arrival_time": "12:45",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 220
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 550
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 1050
+                    }
+                ]
+            },
+            {
+                "flight_number": "DL330",
+                "source_city": "Minneapolis",
+                "source_state": "Minnesota",
+                "source_airport_code": "MSP",
+                "source_depart_date": "2026-02-16",
+                "source_depart_time": "13:30",
+                "destination_city": "Salt Lake City",
+                "destination_state": "Utah",
+                "destination_airport_code": "SLC",
+                "destination_arrival_date": "2026-02-16",
+                "destination_arrival_time": "15:00",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 140
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 380
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 680
+                    }
+                ]
+            },
+            {
+                "flight_number": "DL440",
+                "source_city": "New York",
+                "source_state": "New York",
+                "source_airport_code": "JFK",
+                "source_depart_date": "2026-02-17",
+                "source_depart_time": "16:00",
+                "destination_city": "San Francisco",
+                "destination_state": "California",
+                "destination_airport_code": "SFO",
+                "destination_arrival_date": "2026-02-17",
+                "destination_arrival_time": "19:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 230
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 580
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 1100
+                    }
+                ]
+            },
+            {
+                "flight_number": "DL550",
+                "source_city": "Atlanta",
+                "source_state": "Georgia",
+                "source_airport_code": "ATL",
+                "source_depart_date": "2026-02-18",
+                "source_depart_time": "05:45",
+                "destination_city": "Orlando",
+                "destination_state": "Florida",
+                "destination_airport_code": "MCO",
+                "destination_arrival_date": "2026-02-18",
+                "destination_arrival_time": "07:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 110
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 300
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 550
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "carrier_name": "American Airlines",
+        "routes": [
+            {
+                "flight_number": "AA150",
+                "source_city": "Dallas",
+                "source_state": "Texas",
+                "source_airport_code": "DFW",
+                "source_depart_date": "2026-02-14",
+                "source_depart_time": "06:00",
+                "destination_city": "Miami",
+                "destination_state": "Florida",
+                "destination_airport_code": "MIA",
+                "destination_arrival_date": "2026-02-14",
+                "destination_arrival_time": "10:15",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 170
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 430
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 800
+                    }
+                ]
+            },
+            {
+                "flight_number": "AA250",
+                "source_city": "Charlotte",
+                "source_state": "North Carolina",
+                "source_airport_code": "CLT",
+                "source_depart_date": "2026-02-15",
+                "source_depart_time": "12:00",
+                "destination_city": "Philadelphia",
+                "destination_state": "Pennsylvania",
+                "destination_airport_code": "PHL",
+                "destination_arrival_date": "2026-02-15",
+                "destination_arrival_time": "13:45",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 120
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 320
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 580
+                    }
+                ]
+            },
+            {
+                "flight_number": "AA350",
+                "source_city": "Phoenix",
+                "source_state": "Arizona",
+                "source_airport_code": "PHX",
+                "source_depart_date": "2026-02-16",
+                "source_depart_time": "09:30",
+                "destination_city": "Chicago",
+                "destination_state": "Illinois",
+                "destination_airport_code": "ORD",
+                "destination_arrival_date": "2026-02-16",
+                "destination_arrival_time": "14:00",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 175
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 440
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 820
+                    }
+                ]
+            },
+            {
+                "flight_number": "AA450",
+                "source_city": "New York",
+                "source_state": "New York",
+                "source_airport_code": "JFK",
+                "source_depart_date": "2026-02-17",
+                "source_depart_time": "18:00",
+                "destination_city": "Los Angeles",
+                "destination_state": "California",
+                "destination_airport_code": "LAX",
+                "destination_arrival_date": "2026-02-17",
+                "destination_arrival_time": "21:15",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 240
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 600
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 1150
+                    }
+                ]
+            },
+            {
+                "flight_number": "AA550",
+                "source_city": "Dallas",
+                "source_state": "Texas",
+                "source_airport_code": "DFW",
+                "source_depart_date": "2026-02-19",
+                "source_depart_time": "15:30",
+                "destination_city": "Las Vegas",
+                "destination_state": "Nevada",
+                "destination_airport_code": "LAS",
+                "destination_arrival_date": "2026-02-19",
+                "destination_arrival_time": "16:45",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 145
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 370
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 690
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "carrier_name": "Southwest Airlines",
+        "routes": [
+            {
+                "flight_number": "WN180",
+                "source_city": "Dallas",
+                "source_state": "Texas",
+                "source_airport_code": "DAL",
+                "source_depart_date": "2026-02-14",
+                "source_depart_time": "07:30",
+                "destination_city": "Houston",
+                "destination_state": "Texas",
+                "destination_airport_code": "HOU",
+                "destination_arrival_date": "2026-02-14",
+                "destination_arrival_time": "08:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 85
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 220
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 400
+                    }
+                ]
+            },
+            {
+                "flight_number": "WN280",
+                "source_city": "Denver",
+                "source_state": "Colorado",
+                "source_airport_code": "DEN",
+                "source_depart_date": "2026-02-15",
+                "source_depart_time": "11:00",
+                "destination_city": "Las Vegas",
+                "destination_state": "Nevada",
+                "destination_airport_code": "LAS",
+                "destination_arrival_date": "2026-02-15",
+                "destination_arrival_time": "12:15",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 95
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 250
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 460
+                    }
+                ]
+            },
+            {
+                "flight_number": "WN380",
+                "source_city": "Baltimore",
+                "source_state": "Maryland",
+                "source_airport_code": "BWI",
+                "source_depart_date": "2026-02-16",
+                "source_depart_time": "14:45",
+                "destination_city": "Nashville",
+                "destination_state": "Tennessee",
+                "destination_airport_code": "BNA",
+                "destination_arrival_date": "2026-02-16",
+                "destination_arrival_time": "16:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 110
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 290
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 530
+                    }
+                ]
+            },
+            {
+                "flight_number": "WN480",
+                "source_city": "Chicago",
+                "source_state": "Illinois",
+                "source_airport_code": "MDW",
+                "source_depart_date": "2026-02-17",
+                "source_depart_time": "08:00",
+                "destination_city": "Phoenix",
+                "destination_state": "Arizona",
+                "destination_airport_code": "PHX",
+                "destination_arrival_date": "2026-02-17",
+                "destination_arrival_time": "10:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 155
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 390
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 720
+                    }
+                ]
+            },
+            {
+                "flight_number": "WN580",
+                "source_city": "Oakland",
+                "source_state": "California",
+                "source_airport_code": "OAK",
+                "source_depart_date": "2026-02-18",
+                "source_depart_time": "16:00",
+                "destination_city": "San Diego",
+                "destination_state": "California",
+                "destination_airport_code": "SAN",
+                "destination_arrival_date": "2026-02-18",
+                "destination_arrival_time": "17:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 80
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 210
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 380
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "carrier_name": "JetBlue Airways",
+        "routes": [
+            {
+                "flight_number": "B6120",
+                "source_city": "New York",
+                "source_state": "New York",
+                "source_airport_code": "JFK",
+                "source_depart_date": "2026-02-14",
+                "source_depart_time": "06:30",
+                "destination_city": "Fort Lauderdale",
+                "destination_state": "Florida",
+                "destination_airport_code": "FLL",
+                "destination_arrival_date": "2026-02-14",
+                "destination_arrival_time": "09:45",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 140
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 360
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 670
+                    }
+                ]
+            },
+            {
+                "flight_number": "B6220",
+                "source_city": "Boston",
+                "source_state": "Massachusetts",
+                "source_airport_code": "BOS",
+                "source_depart_date": "2026-02-15",
+                "source_depart_time": "10:00",
+                "destination_city": "San Juan",
+                "destination_state": "Puerto Rico",
+                "destination_airport_code": "SJU",
+                "destination_arrival_date": "2026-02-15",
+                "destination_arrival_time": "14:00",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 195
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 490
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 920
+                    }
+                ]
+            },
+            {
+                "flight_number": "B6320",
+                "source_city": "New York",
+                "source_state": "New York",
+                "source_airport_code": "JFK",
+                "source_depart_date": "2026-02-16",
+                "source_depart_time": "13:00",
+                "destination_city": "Los Angeles",
+                "destination_state": "California",
+                "destination_airport_code": "LAX",
+                "destination_arrival_date": "2026-02-16",
+                "destination_arrival_time": "16:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 215
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 540
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 1020
+                    }
+                ]
+            },
+            {
+                "flight_number": "B6420",
+                "source_city": "Fort Lauderdale",
+                "source_state": "Florida",
+                "source_airport_code": "FLL",
+                "source_depart_date": "2026-02-17",
+                "source_depart_time": "15:30",
+                "destination_city": "Boston",
+                "destination_state": "Massachusetts",
+                "destination_airport_code": "BOS",
+                "destination_arrival_date": "2026-02-17",
+                "destination_arrival_time": "18:45",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 150
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 390
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 710
+                    }
+                ]
+            },
+            {
+                "flight_number": "B6520",
+                "source_city": "Los Angeles",
+                "source_state": "California",
+                "source_airport_code": "LAX",
+                "source_depart_date": "2026-02-18",
+                "source_depart_time": "20:00",
+                "destination_city": "New York",
+                "destination_state": "New York",
+                "destination_airport_code": "JFK",
+                "destination_arrival_date": "2026-02-19",
+                "destination_arrival_time": "04:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 205
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 510
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 980
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "carrier_name": "Alaska Airlines",
+        "routes": [
+            {
+                "flight_number": "AS130",
+                "source_city": "Seattle",
+                "source_state": "Washington",
+                "source_airport_code": "SEA",
+                "source_depart_date": "2026-02-14",
+                "source_depart_time": "08:00",
+                "destination_city": "Portland",
+                "destination_state": "Oregon",
+                "destination_airport_code": "PDX",
+                "destination_arrival_date": "2026-02-14",
+                "destination_arrival_time": "09:00",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 75
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 200
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 360
+                    }
+                ]
+            },
+            {
+                "flight_number": "AS230",
+                "source_city": "Seattle",
+                "source_state": "Washington",
+                "source_airport_code": "SEA",
+                "source_depart_date": "2026-02-15",
+                "source_depart_time": "11:30",
+                "destination_city": "San Francisco",
+                "destination_state": "California",
+                "destination_airport_code": "SFO",
+                "destination_arrival_date": "2026-02-15",
+                "destination_arrival_time": "13:45",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 125
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 330
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 600
+                    }
+                ]
+            },
+            {
+                "flight_number": "AS330",
+                "source_city": "Anchorage",
+                "source_state": "Alaska",
+                "source_airport_code": "ANC",
+                "source_depart_date": "2026-02-16",
+                "source_depart_time": "09:00",
+                "destination_city": "Seattle",
+                "destination_state": "Washington",
+                "destination_airport_code": "SEA",
+                "destination_arrival_date": "2026-02-16",
+                "destination_arrival_time": "12:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 185
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 460
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 870
+                    }
+                ]
+            },
+            {
+                "flight_number": "AS430",
+                "source_city": "Los Angeles",
+                "source_state": "California",
+                "source_airport_code": "LAX",
+                "source_depart_date": "2026-02-17",
+                "source_depart_time": "17:00",
+                "destination_city": "Seattle",
+                "destination_state": "Washington",
+                "destination_airport_code": "SEA",
+                "destination_arrival_date": "2026-02-17",
+                "destination_arrival_time": "19:30",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 135
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 350
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 640
+                    }
+                ]
+            },
+            {
+                "flight_number": "AS530",
+                "source_city": "Portland",
+                "source_state": "Oregon",
+                "source_airport_code": "PDX",
+                "source_depart_date": "2026-02-18",
+                "source_depart_time": "06:00",
+                "destination_city": "San Diego",
+                "destination_state": "California",
+                "destination_airport_code": "SAN",
+                "destination_arrival_date": "2026-02-18",
+                "destination_arrival_time": "08:45",
+                "price": [
+                    {
+                        "class": "Economy",
+                        "price_per_seat": 145
+                    },
+                    {
+                        "class": "First Class",
+                        "price_per_seat": 370
+                    },
+                    {
+                        "class": "Business",
+                        "price_per_seat": 680
+                    }
+                ]
+            }
+        ]
+    }
+]

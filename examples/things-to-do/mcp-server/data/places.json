@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "New York City",
+    "country": "USA",
+    "description": "The city that never sleeps, offering world-class museums, iconic landmarks, Broadway shows, and diverse culinary experiences across five boroughs.",
+    "highlights": ["Central Park", "Times Square", "Statue of Liberty", "Metropolitan Museum of Art", "Brooklyn Bridge"]
+  },
+  {
+    "id": 2,
+    "name": "Paris",
+    "country": "France",
+    "description": "The City of Light enchants visitors with its stunning architecture, world-renowned art museums, exquisite cuisine, and romantic ambiance along the Seine.",
+    "highlights": ["Eiffel Tower", "Louvre Museum", "Notre-Dame Cathedral", "Montmartre", "Palace of Versailles"]
+  },
+  {
+    "id": 3,
+    "name": "Tokyo",
+    "country": "Japan",
+    "description": "A vibrant metropolis blending ultramodern technology with ancient traditions, offering extraordinary food, unique neighborhoods, and unforgettable cultural experiences.",
+    "highlights": ["Shibuya Crossing", "Senso-ji Temple", "Akihabara", "Shinjuku Gyoen", "teamLab Borderless"]
+  },
+  {
+    "id": 4,
+    "name": "London",
+    "country": "UK",
+    "description": "A global cultural hub where centuries of history meet contemporary innovation, featuring royal palaces, world-class theater, iconic museums, and diverse neighborhoods.",
+    "highlights": ["Tower of London", "Buckingham Palace", "British Museum", "West End Theater District", "Borough Market"]
+  },
+  {
+    "id": 5,
+    "name": "Sydney",
+    "country": "Australia",
+    "description": "A stunning harbor city renowned for its iconic Opera House, world-famous beaches, vibrant food scene, and easy access to unique Australian wildlife experiences.",
+    "highlights": ["Sydney Opera House", "Bondi Beach", "Sydney Harbour Bridge", "Taronga Zoo", "Blue Mountains"]
+  }
+]

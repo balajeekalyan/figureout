@@ -1,0 +1,69 @@
+.places-results {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.place-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: #fff;
+}
+
+.place-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.place-card-name {
+  margin: 0 0 0.25rem;
+  font-size: 1.125rem;
+}
+
+.place-card-country {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.place-explore-btn {
+  padding: 0.4rem 1rem;
+  font-size: 0.875rem;
+  border: 1px solid #2563eb;
+  border-radius: 4px;
+  background: white;
+  color: #2563eb;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.place-explore-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.place-card-description {
+  font-size: 0.875rem;
+  color: #555;
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+
+.place-card-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.place-highlight-tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: #f0f9ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #1e40af;
+}
