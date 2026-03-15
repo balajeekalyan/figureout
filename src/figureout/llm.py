@@ -148,7 +148,13 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
     model = llm_version
 
     if llm == LLM.OPENAI:
-        from openai import AsyncOpenAI, BadRequestError
+        try:
+            from openai import AsyncOpenAI, BadRequestError
+        except ImportError:
+            raise ImportError(
+                "The 'openai' package is required to use LLM.OPENAI. "
+                "Install it with: pip install figureout[openai]"
+            )
 
         client = AsyncOpenAI(api_key=_resolve_api_key(llm, api_key))
 
@@ -189,9 +195,15 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
         return chat
 
     elif llm == LLM.GEMINI:
-        from google import genai
-        from google.genai import types
-        from google.api_core.exceptions import InvalidArgument
+        try:
+            from google import genai
+            from google.genai import types
+            from google.api_core.exceptions import InvalidArgument
+        except ImportError:
+            raise ImportError(
+                "The 'google-genai' and 'google-api-core' packages are required to use LLM.GEMINI. "
+                "Install them with: pip install figureout[gemini]"
+            )
 
         client = genai.Client(api_key=_resolve_api_key(llm, api_key))
 
@@ -270,7 +282,13 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
         return chat
 
     elif llm == LLM.CLAUDE:
-        from anthropic import AsyncAnthropic, BadRequestError
+        try:
+            from anthropic import AsyncAnthropic, BadRequestError
+        except ImportError:
+            raise ImportError(
+                "The 'anthropic' package is required to use LLM.CLAUDE. "
+                "Install it with: pip install figureout[claude]"
+            )
 
         client = AsyncAnthropic(api_key=_resolve_api_key(llm, api_key))
 
@@ -345,7 +363,13 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
         return chat
 
     elif llm == LLM.META:
-        from openai import AsyncOpenAI, BadRequestError
+        try:
+            from openai import AsyncOpenAI, BadRequestError
+        except ImportError:
+            raise ImportError(
+                "The 'openai' package is required to use LLM.META. "
+                "Install it with: pip install figureout[openai]"
+            )
 
         client = AsyncOpenAI(
             api_key=_resolve_api_key(llm, api_key),
@@ -388,7 +412,13 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
         return chat
 
     elif llm == LLM.MISTRAL:
-        from openai import AsyncOpenAI, BadRequestError
+        try:
+            from openai import AsyncOpenAI, BadRequestError
+        except ImportError:
+            raise ImportError(
+                "The 'openai' package is required to use LLM.MISTRAL. "
+                "Install it with: pip install figureout[openai]"
+            )
 
         client = AsyncOpenAI(
             api_key=_resolve_api_key(llm, api_key),
@@ -431,7 +461,13 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
         return chat
 
     elif llm == LLM.GROQ:
-        from openai import AsyncOpenAI, BadRequestError
+        try:
+            from openai import AsyncOpenAI, BadRequestError
+        except ImportError:
+            raise ImportError(
+                "The 'openai' package is required to use LLM.GROQ. "
+                "Install it with: pip install figureout[openai]"
+            )
 
         client = AsyncOpenAI(
             api_key=_resolve_api_key(llm, api_key),
