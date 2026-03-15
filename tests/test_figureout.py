@@ -26,7 +26,7 @@ ROLES = {
 
 
 def test_version():
-    assert figureout.__version__ == "0.1.1"
+    assert figureout.__version__ == "0.1.2"
 
 
 @patch("figureout.engine.get_llm_client")

@@ -1,6 +1,6 @@
 """figureout - A Python package."""
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 from figureout.roles import RoleDefinition
 from figureout.exceptions import OutputTokenLimitError, InputTokenLimitError, LLMError
