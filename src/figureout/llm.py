@@ -3,6 +3,7 @@
 import asyncio
 import json
 import os
+import uuid
 from enum import Enum
 
 from figureout.exceptions import OutputTokenLimitError, InputTokenLimitError
@@ -264,7 +265,7 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
                         fc = part.function_call
                         tools_used.append(fc.name)
                         parsed_tool_calls.append({
-                            "id": fc.name,
+                            "id": f"call_{uuid.uuid4().hex[:8]}",
                             "name": fc.name,
                             "arguments": dict(fc.args) if fc.args else {},
                         })
