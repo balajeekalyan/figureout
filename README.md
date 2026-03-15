@@ -1,4 +1,4 @@
-# FigureOut
+# FigureOut - a lightweight and resilient multi-LLM orchestrator
 
 [![PyPI version](https://img.shields.io/pypi/v/figureout.svg)](https://pypi.org/project/figureout/)
 [![License](https://img.shields.io/pypi/l/figureout.svg)](https://pypi.org/project/figureout/)
@@ -12,22 +12,27 @@ FigureOut has no hardcoded domain knowledge. You supply your own roles, system p
 
 ## Installation
 
+Install the base package plus the extra for your LLM provider:
+
 ```bash
-pip install figureout
+pip install figureout[openai]   # OpenAI, Meta (Llama), Mistral, or Groq
+pip install figureout[gemini]   # Google Gemini
+pip install figureout[claude]   # Anthropic Claude
+pip install figureout[all]      # All providers
 ```
 
 ## Supported LLM Providers
 
-| Provider | Enum | API Key Env Var | Required Package |
+| Provider | Enum | API Key Env Var | Install Extra |
 |---|---|---|---|
-| OpenAI | `LLM.OPENAI` | `OPENAI_API_KEY` | `pip install openai` |
-| Google Gemini | `LLM.GEMINI` | `GEMINI_API_KEY` | `pip install google-genai google-api-core` |
-| Anthropic Claude | `LLM.CLAUDE` | `ANTHROPIC_API_KEY` | `pip install anthropic` |
-| Meta (Llama) | `LLM.META` | `META_API_KEY` | `pip install llama-stack-client` |
-| Mistral | `LLM.MISTRAL` | `MISTRAL_API_KEY` | `pip install mistralai` |
-| Groq | `LLM.GROQ` | `GROQ_API_KEY` | `pip install groq` |
+| OpenAI | `LLM.OPENAI` | `OPENAI_API_KEY` | `pip install figureout[openai]` |
+| Google Gemini | `LLM.GEMINI` | `GEMINI_API_KEY` | `pip install figureout[gemini]` |
+| Anthropic Claude | `LLM.CLAUDE` | `ANTHROPIC_API_KEY` | `pip install figureout[claude]` |
+| Meta (Llama) | `LLM.META` | `META_API_KEY` | `pip install figureout[openai]` |
+| Mistral | `LLM.MISTRAL` | `MISTRAL_API_KEY` | `pip install figureout[openai]` |
+| Groq | `LLM.GROQ` | `GROQ_API_KEY` | `pip install figureout[openai]` |
 
-Only install the package for the provider(s) you intend to use.
+Only install the extra for the provider(s) you intend to use.
 
 ## Quick Start
 
