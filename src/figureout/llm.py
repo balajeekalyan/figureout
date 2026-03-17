@@ -365,17 +365,14 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
 
     elif llm == LLM.META:
         try:
-            from openai import AsyncOpenAI, BadRequestError
+            from llama_api_client import AsyncLlamaAPIClient, BadRequestError
         except ImportError:
             raise ImportError(
-                "The 'openai' package is required to use LLM.META. "
-                "Install it with: pip install figureout[openai]"
+                "The 'llama-api-client' package is required to use LLM.META. "
+                "Install it with: pip install figureout[meta]"
             )
 
-        client = AsyncOpenAI(
-            api_key=_resolve_api_key(llm, api_key),
-            base_url="https://api.llama.com/compat/v1/",
-        )
+        client = AsyncLlamaAPIClient(api_key=_resolve_api_key(llm, api_key))
 
         async def chat(messages: list[dict], tools: list[dict] | None = None, json_mode: bool = False, require_tool_use: bool = False) -> dict:
             kwargs = {"model": model, "max_tokens": max_output_tokens, "messages": messages}
@@ -398,7 +395,10 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
 
             async def _call():
                 try:
-                    return await client.chat.completions.create(**kwargs, timeout=timeout)
+                    return await asyncio.wait_for(
+                        client.chat.completions.create(**kwargs),
+                        timeout=timeout,
+                    )
                 except BadRequestError as e:
                     if "max_tokens" in str(e).lower() or "context" in str(e).lower() or "too long" in str(e).lower():
                         raise InputTokenLimitError("meta", model, str(e)) from e
@@ -414,17 +414,14 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
 
     elif llm == LLM.MISTRAL:
         try:
-            from openai import AsyncOpenAI, BadRequestError
+            from mistralai import Mistral
         except ImportError:
             raise ImportError(
-                "The 'openai' package is required to use LLM.MISTRAL. "
-                "Install it with: pip install figureout[openai]"
+                "The 'mistralai' package is required to use LLM.MISTRAL. "
+                "Install it with: pip install figureout[mistral]"
             )
 
-        client = AsyncOpenAI(
-            api_key=_resolve_api_key(llm, api_key),
-            base_url="https://api.mistral.ai/v1",
-        )
+        client = Mistral(api_key=_resolve_api_key(llm, api_key), timeout_ms=int(timeout * 1000))
 
         async def chat(messages: list[dict], tools: list[dict] | None = None, json_mode: bool = False, require_tool_use: bool = False) -> dict:
             kwargs = {"model": model, "max_tokens": max_output_tokens, "messages": messages}
@@ -443,13 +440,13 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
                 ]
                 kwargs["parallel_tool_calls"] = True
                 if require_tool_use:
-                    kwargs["tool_choice"] = "required"
+                    kwargs["tool_choice"] = "any"
 
             async def _call():
                 try:
-                    return await client.chat.completions.create(**kwargs, timeout=timeout)
-                except BadRequestError as e:
-                    if "max_tokens" in str(e).lower() or "context" in str(e).lower() or "too long" in str(e).lower():
+                    return await client.chat.complete_async(**kwargs)
+                except Exception as e:
+                    if "max_tokens" in str(e).lower() or "context" in str(e).lower() or "too long" in str(e).lower() or "token" in str(e).lower():
                         raise InputTokenLimitError("mistral", model, str(e)) from e
                     raise
 
@@ -457,23 +454,43 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
             if response.choices[0].finish_reason == "length":
                 raise OutputTokenLimitError("mistral", model, max_output_tokens, response.usage.completion_tokens)
             msg = response.choices[0].message
-            return _parse_openai_response(msg, response.usage, msg.tool_calls)
+            tool_calls_raw = msg.tool_calls or []
+            parsed_tool_calls = [
+                {
+                    "id": tc.id,
+                    "name": tc.function.name,
+                    "arguments": json.loads(tc.function.arguments),
+                }
+                for tc in tool_calls_raw
+            ]
+            return {
+                "text": msg.content or "",
+                "input_tokens": response.usage.prompt_tokens,
+                "output_tokens": response.usage.completion_tokens,
+                "tools_used": [tc["name"] for tc in parsed_tool_calls],
+                "tool_calls": parsed_tool_calls,
+                "assistant_message": {
+                    "role": "assistant",
+                    "content": msg.content,
+                    "tool_calls": [
+                        {"id": tc.id, "type": "function", "function": {"name": tc.function.name, "arguments": tc.function.arguments}}
+                        for tc in tool_calls_raw
+                    ] if tool_calls_raw else None,
+                },
+            }
 
         return chat
 
     elif llm == LLM.GROQ:
         try:
-            from openai import AsyncOpenAI, BadRequestError
+            from groq import AsyncGroq, BadRequestError
         except ImportError:
             raise ImportError(
-                "The 'openai' package is required to use LLM.GROQ. "
-                "Install it with: pip install figureout[openai]"
+                "The 'groq' package is required to use LLM.GROQ. "
+                "Install it with: pip install figureout[groq]"
             )
 
-        client = AsyncOpenAI(
-            api_key=_resolve_api_key(llm, api_key),
-            base_url="https://api.groq.com/openai/v1",
-        )
+        client = AsyncGroq(api_key=_resolve_api_key(llm, api_key))
 
         async def chat(messages: list[dict], tools: list[dict] | None = None, json_mode: bool = False, require_tool_use: bool = False) -> dict:
             kwargs = {"model": model, "max_tokens": max_output_tokens, "messages": messages}

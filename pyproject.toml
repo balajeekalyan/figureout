@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "figureout"
-version = "0.1.2"
+version = "0.2.0"
 description = "FigureOut - a lightweight and resilient multi-LLM orchestrator"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -18,5 +18,8 @@ authors = [
 openai  = ["openai"]
 gemini  = ["google-genai", "google-api-core"]
 claude  = ["anthropic"]
-all     = ["openai", "anthropic", "google-genai", "google-api-core"]
+meta    = ["llama-api-client"]
+mistral = ["mistralai"]
+groq    = ["groq"]
+all     = ["openai", "anthropic", "google-genai", "google-api-core", "llama-api-client", "mistralai", "groq"]
 dev     = ["pytest"]
