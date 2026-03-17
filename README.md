@@ -15,9 +15,12 @@ FigureOut has no hardcoded domain knowledge. You supply your own roles, system p
 Install the base package plus the extra for your LLM provider:
 
 ```bash
-pip install figureout[openai]   # OpenAI, Meta (Llama), Mistral, or Groq
+pip install figureout[openai]   # OpenAI
 pip install figureout[gemini]   # Google Gemini
 pip install figureout[claude]   # Anthropic Claude
+pip install figureout[meta]     # Meta (Llama)
+pip install figureout[mistral]  # Mistral
+pip install figureout[groq]     # Groq
 pip install figureout[all]      # All providers
 ```
 
@@ -28,9 +31,9 @@ pip install figureout[all]      # All providers
 | OpenAI | `LLM.OPENAI` | `OPENAI_API_KEY` | `pip install figureout[openai]` |
 | Google Gemini | `LLM.GEMINI` | `GEMINI_API_KEY` | `pip install figureout[gemini]` |
 | Anthropic Claude | `LLM.CLAUDE` | `ANTHROPIC_API_KEY` | `pip install figureout[claude]` |
-| Meta (Llama) | `LLM.META` | `META_API_KEY` | `pip install figureout[openai]` |
-| Mistral | `LLM.MISTRAL` | `MISTRAL_API_KEY` | `pip install figureout[openai]` |
-| Groq | `LLM.GROQ` | `GROQ_API_KEY` | `pip install figureout[openai]` |
+| Meta (Llama) | `LLM.META` | `META_API_KEY` | `pip install figureout[meta]` |
+| Mistral | `LLM.MISTRAL` | `MISTRAL_API_KEY` | `pip install figureout[mistral]` |
+| Groq | `LLM.GROQ` | `GROQ_API_KEY` | `pip install figureout[groq]` |
 
 Only install the extra for the provider(s) you intend to use.
 
