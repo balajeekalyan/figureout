@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Docs — FigureOut</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --accent: #f78166;
+      --accent2: #79c0ff;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --code-bg: #1f2937;
+      --sidebar-w: 240px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Nav ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 56px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 20;
+    }
+    .nav-logo { font-weight: 700; font-size: 1.1rem; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 1.5rem; font-size: 0.9rem; }
+    .nav-links a { color: var(--muted); }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+
+    /* ── Layout ── */
+    .layout {
+      display: flex;
+      flex: 1;
+    }
+
+    /* ── Sidebar ── */
+    aside {
+      width: var(--sidebar-w);
+      flex-shrink: 0;
+      border-right: 1px solid var(--border);
+      padding: 2rem 1.2rem;
+      position: sticky;
+      top: 56px;
+      height: calc(100vh - 56px);
+      overflow-y: auto;
+    }
+    aside h4 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.6rem; margin-top: 1.2rem; }
+    aside h4:first-child { margin-top: 0; }
+    aside ul { list-style: none; }
+    aside ul li a {
+      display: block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    aside ul li a:hover { background: var(--surface); color: var(--text); text-decoration: none; }
+    aside ul li a.active { color: var(--accent2); }
+
+    /* ── Main ── */
+    main {
+      flex: 1;
+      max-width: 800px;
+      padding: 3rem 2.5rem;
+      min-width: 0;
+    }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 2.5rem 0 0.8rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.4rem; color: var(--accent2); }
+    p { margin-bottom: 0.8rem; color: #cdd9e5; }
+    ul, ol { padding-left: 1.4rem; margin-bottom: 0.8rem; color: #cdd9e5; }
+    li { margin-bottom: 0.25rem; }
+
+    code {
+      background: var(--code-bg);
+      border-radius: 4px;
+      padding: 0.1em 0.4em;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 0.85em;
+    }
+
+    pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.2rem 1.4rem;
+      overflow-x: auto;
+      margin: 0.8rem 0 1.2rem;
+    }
+    pre code {
+      background: none;
+      padding: 0;
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+
+    .kw { color: #ff7b72; }
+    .fn { color: #d2a8ff; }
+    .str { color: #a5d6ff; }
+    .cm { color: var(--muted); font-style: italic; }
+    .num { color: #79c0ff; }
+
+    /* ── Param table ── */
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 0.5rem 0 1.2rem; }
+    th { text-align: left; padding: 0.5rem 0.8rem; border-bottom: 2px solid var(--border); color: var(--muted); font-weight: 600; }
+    td { padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    td:first-child { font-family: monospace; color: var(--accent2); white-space: nowrap; }
+    td:nth-child(2) { color: var(--muted); white-space: nowrap; }
+
+    /* ── Callout ── */
+    .callout {
+      border-left: 3px solid var(--accent);
+      background: rgba(247,129,102,0.07);
+      border-radius: 0 6px 6px 0;
+      padding: 0.8rem 1rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: #cdd9e5;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 700px) {
+      aside { display: none; }
+      main { padding: 2rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="../">Figure<span>Out</span></a>
+  <div class="nav-links">
+    <a href="./" class="active">Docs</a>
+    <a href="https://pypi.org/project/figureout/" target="_blank">PyPI</a>
+    <a href="https://github.com/balajinithiyanandam/figureout" target="_blank">GitHub</a>
+  </div>
+</nav>
+
+<div class="layout">
+
+  <aside>
+    <h4>Getting Started</h4>
+    <ul>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#quickstart">Quick Start</a></li>
+    </ul>
+    <h4>API Reference</h4>
+    <ul>
+      <li><a href="#figureout-class">FigureOut</a></li>
+      <li><a href="#role-definition">RoleDefinition</a></li>
+      <li><a href="#run-method">run()</a></li>
+      <li><a href="#llm-enum">LLM Enum</a></li>
+    </ul>
+    <h4>Guides</h4>
+    <ul>
+      <li><a href="#multi-role">Multi-Role Queries</a></li>
+      <li><a href="#off-topic">off_topic Role</a></li>
+      <li><a href="#tool-use">Tool Use (MCP)</a></li>
+      <li><a href="#verbose">Verbose Mode</a></li>
+      <li><a href="#env-vars">Environment Variables</a></li>
+    </ul>
+    <h4>Examples</h4>
+    <ul>
+      <li><a href="#examples">Example Apps</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>FigureOut Documentation</h1>
+    <p>FigureOut is a lightweight, modular orchestrator for building LLM workflows. You supply roles, system prompts, output schemas, and classifier guidelines — FigureOut classifies incoming queries and dispatches them to the right role, returning structured JSON.</p>
+
+    <!-- Installation -->
+    <h2 id="installation">Installation</h2>
+    <p>Install the base package with the extra for your LLM provider:</p>
+    <pre><code>pip install figureout[openai]   <span class="cm"># OpenAI</span>
+pip install figureout[gemini]   <span class="cm"># Google Gemini</span>
+pip install figureout[claude]   <span class="cm"># Anthropic Claude</span>
+pip install figureout[meta]     <span class="cm"># Meta (Llama)</span>
+pip install figureout[mistral]  <span class="cm"># Mistral</span>
+pip install figureout[groq]     <span class="cm"># Groq</span>
+pip install figureout[all]      <span class="cm"># All providers</span></code></pre>
+    <div class="callout">Only install the extra for the provider(s) you intend to use.</div>
+
+    <!-- Quick Start -->
+    <h2 id="quickstart">Quick Start</h2>
+    <pre><code><span class="kw">import</span> asyncio
+<span class="kw">from</span> figureout <span class="kw">import</span> FigureOut, RoleDefinition
+
+concierge = <span class="fn">FigureOut</span>(
+    llm=<span class="str">"openai"</span>,
+    llm_version=<span class="str">"gpt-4o"</span>,
+    roles={
+        <span class="str">"product_search"</span>: <span class="fn">RoleDefinition</span>(
+            prompt=<span class="str">"You are a product search specialist. Help users find products."</span>,
+            schema=<span class="str">'{"results": [{"id": int, "name": str, "price": float}], "summary": str}'</span>,
+            guideline=<span class="str">"queries about finding or searching for products"</span>,
+        ),
+        <span class="str">"off_topic"</span>: <span class="fn">RoleDefinition</span>(
+            prompt=<span class="str">"Politely decline and explain you can only help with product searches."</span>,
+            schema=<span class="str">'{"message": str}'</span>,
+            guideline=<span class="str">"anything unrelated to products"</span>,
+        ),
+    },
+)
+
+result = asyncio.<span class="fn">run</span>(concierge.<span class="fn">run</span>(<span class="str">"Find me a blue running shoe under $100"</span>))
+<span class="fn">print</span>(result)
+<span class="cm"># {"results": [...], "summary": "..."}</span></code></pre>
+
+    <!-- FigureOut class -->
+    <h2 id="figureout-class">FigureOut Constructor</h2>
+    <pre><code><span class="fn">FigureOut</span>(
+    llm: str | LLM,
+    llm_version: str,
+    roles: dict[str, RoleDefinition],
+    lite_llm_version: str | None = <span class="num">None</span>,
+    verbose: bool = <span class="num">False</span>,
+    max_roles: int = <span class="num">1</span>,
+    max_output_tokens: int = <span class="num">16384</span>,
+    max_retries: int = <span class="num">2</span>,
+    max_tool_rounds: int = <span class="num">3</span>,
+    interpret_tool_response: bool | None = <span class="num">None</span>,
+    cache_enabled: bool = <span class="num">True</span>,
+    cache_size: int = <span class="num">128</span>,
+    inject_date: bool = <span class="num">True</span>,
+    api_key: str | None = <span class="num">None</span>,
+    mcp_server = <span class="num">None</span>,
+)</code></pre>
+
+    <table>
+      <thead><tr><th>Parameter</th><th>Type</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>llm</td><td>str | LLM</td><td>LLM provider. Accepts enum or string (e.g. <code>"openai"</code>).</td></tr>
+        <tr><td>llm_version</td><td>str</td><td>Model version string (e.g. <code>"gpt-4o"</code>).</td></tr>
+        <tr><td>roles</td><td>dict</td><td>Map of role name → <code>RoleDefinition</code>.</td></tr>
+        <tr><td>lite_llm_version</td><td>str | None</td><td>Cheaper model for classification step. Falls back to <code>llm_version</code> if unset.</td></tr>
+        <tr><td>verbose</td><td>bool</td><td>Wrap response under <code>"response"</code> key and add <code>"debug"</code> with token/timing info.</td></tr>
+        <tr><td>max_roles</td><td>int</td><td>Maximum roles to dispatch in parallel for a single query. Default <code>1</code>.</td></tr>
+        <tr><td>max_output_tokens</td><td>int</td><td>Max tokens in LLM response. Default <code>16384</code>.</td></tr>
+        <tr><td>max_retries</td><td>int</td><td>Retry attempts on failure. Default <code>2</code>.</td></tr>
+        <tr><td>max_tool_rounds</td><td>int</td><td>Max tool-call rounds per request. Default <code>3</code>.</td></tr>
+        <tr><td>interpret_tool_response</td><td>bool | None</td><td>Controls how tool results are handled. See <a href="#tool-use">Tool Use</a>.</td></tr>
+        <tr><td>cache_enabled</td><td>bool</td><td>Enable LRU response cache. Default <code>True</code>.</td></tr>
+        <tr><td>cache_size</td><td>int</td><td>Max number of cached entries. Default <code>128</code>.</td></tr>
+        <tr><td>inject_date</td><td>bool</td><td>Inject today's date into system prompt. Default <code>True</code>.</td></tr>
+        <tr><td>api_key</td><td>str | None</td><td>Override provider API key (else reads from env var).</td></tr>
+        <tr><td>mcp_server</td><td>FastMCP | None</td><td>FastMCP server for tool use.</td></tr>
+      </tbody>
+    </table>
+
+    <!-- RoleDefinition -->
+    <h2 id="role-definition">RoleDefinition</h2>
+    <pre><code><span class="fn">RoleDefinition</span>(
+    prompt: str,      <span class="cm"># System prompt for this role</span>
+    schema: str,      <span class="cm"># JSON schema string defining the output shape</span>
+    guideline: str,   <span class="cm"># Short description used by classifier to select this role</span>
+)</code></pre>
+    <p>The <code>schema</code> field is a JSON string describing the expected output structure. Use Python type names directly (e.g. <code>str</code>, <code>int</code>, <code>float</code>, <code>list</code>).</p>
+
+    <!-- run() method -->
+    <h2 id="run-method">run() Method</h2>
+    <pre><code><span class="kw">await</span> concierge.<span class="fn">run</span>(
+    user_query: str,
+    role: str | None = <span class="num">None</span>,         <span class="cm"># Skip classification, use this role directly</span>
+    context: str | None = <span class="num">None</span>,      <span class="cm"># Prepended to user_query as additional context</span>
+    output_schema: str | None = <span class="num">None</span>  <span class="cm"># Override the role's default schema</span>
+)</code></pre>
+    <p>Returns a <code>dict</code> matching the role's output schema. When multiple roles are selected, returns a dict keyed by role name.</p>
+
+    <!-- LLM Enum -->
+    <h2 id="llm-enum">LLM Enum</h2>
+    <table>
+      <thead><tr><th>Enum value</th><th>String alias</th><th>API Key Env Var</th><th>Install Extra</th></tr></thead>
+      <tbody>
+        <tr><td>LLM.OPENAI</td><td><code>"openai"</code></td><td>OPENAI_API_KEY</td><td>figureout[openai]</td></tr>
+        <tr><td>LLM.GEMINI</td><td><code>"gemini"</code></td><td>GEMINI_API_KEY</td><td>figureout[gemini]</td></tr>
+        <tr><td>LLM.CLAUDE</td><td><code>"claude"</code></td><td>ANTHROPIC_API_KEY</td><td>figureout[claude]</td></tr>
+        <tr><td>LLM.META</td><td><code>"meta"</code></td><td>META_API_KEY</td><td>figureout[meta]</td></tr>
+        <tr><td>LLM.MISTRAL</td><td><code>"mistral"</code></td><td>MISTRAL_API_KEY</td><td>figureout[mistral]</td></tr>
+        <tr><td>LLM.GROQ</td><td><code>"groq"</code></td><td>GROQ_API_KEY</td><td>figureout[groq]</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Multi-Role -->
+    <h2 id="multi-role">Multi-Role Queries</h2>
+    <p>Set <code>max_roles &gt; 1</code> to allow multiple roles to handle a single query in parallel:</p>
+    <pre><code>concierge = <span class="fn">FigureOut</span>(
+    llm=<span class="str">"openai"</span>, llm_version=<span class="str">"gpt-4o"</span>, roles=ROLES, max_roles=<span class="num">3</span>
+)
+result = <span class="kw">await</span> concierge.<span class="fn">run</span>(<span class="str">"Find concerts and sports events this weekend"</span>)
+<span class="cm"># {"concert_discovery": {...}, "sports_discovery": {...}}</span></code></pre>
+    <p>When a single role is selected, the result is returned directly (not wrapped in a role-keyed dict).</p>
+
+    <!-- off_topic -->
+    <h2 id="off-topic">off_topic Role</h2>
+    <p>Define an <code>"off_topic"</code> role to control fallback behavior. The classifier never selects it directly — it is used automatically when no other role matches:</p>
+    <pre><code><span class="str">"off_topic"</span>: <span class="fn">RoleDefinition</span>(
+    prompt=<span class="str">"Politely decline."</span>,
+    schema=<span class="str">'{"message": str}'</span>,
+    guideline=<span class="str">"anything unrelated"</span>,
+)</code></pre>
+
+    <!-- Tool Use -->
+    <h2 id="tool-use">Tool Use (FastMCP)</h2>
+    <p>Pass a FastMCP server to enable tool calling:</p>
+    <pre><code><span class="kw">from</span> fastmcp <span class="kw">import</span> FastMCP
+
+mcp = <span class="fn">FastMCP</span>(<span class="str">"my-server"</span>)
+
+<span class="kw">@mcp.tool</span>()
+<span class="kw">def</span> <span class="fn">search_products</span>(query: str) -> list:
+    ...
+
+concierge = <span class="fn">FigureOut</span>(
+    llm=<span class="str">"gemini"</span>, llm_version=<span class="str">"gemini-2.0-flash"</span>,
+    roles=ROLES, mcp_server=mcp
+)</code></pre>
+
+    <h3>interpret_tool_response</h3>
+    <p>Controls how tool results are handled after tool execution:</p>
+    <table>
+      <thead><tr><th>Value</th><th>Behavior</th></tr></thead>
+      <tbody>
+        <tr><td>None (default)</td><td>Normal loop — LLM responds naturally after tool calls</td></tr>
+        <tr><td>True</td><td>Bridge messages appended + forced JSON mode round; use for complex nested schemas</td></tr>
+        <tr><td>False</td><td>Return raw tool output without sending back to the LLM</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Verbose -->
+    <h2 id="verbose">Verbose Mode</h2>
+    <p>With <code>verbose=True</code>, the response is wrapped under a <code>"response"</code> key and a <code>"debug"</code> key is added with token usage and timing:</p>
+    <pre><code>concierge = <span class="fn">FigureOut</span>(..., verbose=<span class="num">True</span>)
+result = <span class="kw">await</span> concierge.<span class="fn">run</span>(<span class="str">"Find flights to Tokyo"</span>)
+<span class="cm"># {
+#   "response": {"flights": [...]},
+#   "debug": {"input_tokens": 512, "output_tokens": 256, ...}
+# }</span></code></pre>
+
+    <!-- Env vars -->
+    <h2 id="env-vars">Environment Variables</h2>
+    <p>All constructor params can also be set via environment variables:</p>
+    <table>
+      <thead><tr><th>Parameter</th><th>Environment Variable</th></tr></thead>
+      <tbody>
+        <tr><td>llm</td><td>FIGUREOUT_LLM</td></tr>
+        <tr><td>llm_version</td><td>FIGUREOUT_LLM_VERSION</td></tr>
+        <tr><td>lite_llm_version</td><td>FIGUREOUT_LITE_LLM_VERSION</td></tr>
+        <tr><td>verbose</td><td>FIGUREOUT_VERBOSE</td></tr>
+        <tr><td>max_roles</td><td>FIGUREOUT_MAX_ROLES</td></tr>
+        <tr><td>max_output_tokens</td><td>FIGUREOUT_MAX_OUTPUT_TOKENS</td></tr>
+        <tr><td>max_retries</td><td>FIGUREOUT_MAX_RETRIES</td></tr>
+        <tr><td>max_tool_rounds</td><td>FIGUREOUT_MAX_TOOL_ROUNDS</td></tr>
+        <tr><td>interpret_tool_response</td><td>FIGUREOUT_INTERPRET_TOOL_RESPONSE</td></tr>
+        <tr><td>cache_enabled</td><td>FIGUREOUT_CACHE_ENABLED</td></tr>
+        <tr><td>cache_size</td><td>FIGUREOUT_CACHE_SIZE</td></tr>
+        <tr><td>inject_date</td><td>FIGUREOUT_INJECT_DATE</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Examples -->
+    <h2 id="examples">Example Apps</h2>
+    <p>The <code>examples/</code> directory contains complete domain-specific backends with React+Vite frontends.</p>
+    <table>
+      <thead><tr><th>Directory</th><th>Domain</th></tr></thead>
+      <tbody>
+        <tr><td>event-sports-booking/</td><td>Sports event discovery and booking</td></tr>
+        <tr><td>flight-booking/</td><td>Flight search and booking</td></tr>
+        <tr><td>restaurant-reservation/</td><td>Restaurant discovery and reservations</td></tr>
+        <tr><td>things-to-do/</td><td>Activity and places discovery</td></tr>
+        <tr><td>customer-support-chat/</td><td>FAQ-based customer support chat</td></tr>
+      </tbody>
+    </table>
+    <pre><code>cd examples/&lt;example-name&gt;/mcp-server
+python app.py</code></pre>
+
+  </main>
+</div>
+
+<footer>
+  <p>FigureOut is open source · <a href="https://github.com/balajeekalyan/figureout" target="_blank">GitHub</a> · <a href="https://pypi.org/project/figureout/" target="_blank">PyPI</a></p>
+</footer>
+
+</body>
+</html>
