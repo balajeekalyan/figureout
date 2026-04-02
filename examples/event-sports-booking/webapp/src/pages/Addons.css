@@ -21,6 +21,17 @@
   overflow: hidden;
 }
 
+.addon-row-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.addon-row-desc {
+  font-size: 0.78rem;
+  color: #666;
+}
+
 .addon-row {
   display: flex;
   justify-content: space-between;
