@@ -10,7 +10,7 @@
         ],
         "details": [
             {
-                "date": "2026-02-04",
+                "date": "2026-04-04",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -18,7 +18,7 @@
                 ]
             },
             {
-                "date": "2026-02-05",
+                "date": "2026-04-05",
                 "city": "Boston, MA",
                 "country": "USA",
                 "showtimes": [
@@ -38,7 +38,7 @@
         ],
         "details": [
             {
-                "date": "2026-02-10",
+                "date": "2026-04-10",
                 "city": "Los Angeles, CA",
                 "country": "USA",
                 "showtimes": [
@@ -46,7 +46,7 @@
                 ]
             },
             {
-                "date": "2026-02-12",
+                "date": "2026-04-12",
                 "city": "San Francisco, CA",
                 "country": "USA",
                 "showtimes": [
@@ -66,7 +66,7 @@
         ],
         "details": [
             {
-                "date": "2026-02-15",
+                "date": "2026-04-15",
                 "city": "Atlanta, GA",
                 "country": "USA",
                 "showtimes": [
@@ -74,7 +74,7 @@
                 ]
             },
             {
-                "date": "2026-02-17",
+                "date": "2026-04-17",
                 "city": "Miami, FL",
                 "country": "USA",
                 "showtimes": [
@@ -94,7 +94,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-01",
+                "date": "2026-05-01",
                 "city": "Chicago, IL",
                 "country": "USA",
                 "showtimes": [
@@ -102,7 +102,7 @@
                 ]
             },
             {
-                "date": "2026-03-03",
+                "date": "2026-05-03",
                 "city": "Detroit, MI",
                 "country": "USA",
                 "showtimes": [
@@ -122,7 +122,7 @@
         ],
         "details": [
             {
-                "date": "2026-02-20",
+                "date": "2026-04-20",
                 "city": "Toronto, ON",
                 "country": "Canada",
                 "showtimes": [
@@ -130,7 +130,7 @@
                 ]
             },
             {
-                "date": "2026-02-22",
+                "date": "2026-04-22",
                 "city": "Montreal, QC",
                 "country": "Canada",
                 "showtimes": [
@@ -149,7 +149,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-05",
+                "date": "2026-05-05",
                 "city": "Nashville, TN",
                 "country": "USA",
                 "showtimes": [
@@ -157,7 +157,7 @@
                 ]
             },
             {
-                "date": "2026-03-07",
+                "date": "2026-05-07",
                 "city": "Austin, TX",
                 "country": "USA",
                 "showtimes": [
@@ -177,7 +177,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-10",
+                "date": "2026-05-10",
                 "city": "Houston, TX",
                 "country": "USA",
                 "showtimes": [
@@ -185,7 +185,7 @@
                 ]
             },
             {
-                "date": "2026-03-12",
+                "date": "2026-05-12",
                 "city": "Dallas, TX",
                 "country": "USA",
                 "showtimes": [
@@ -205,7 +205,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-15",
+                "date": "2026-05-15",
                 "city": "London",
                 "country": "UK",
                 "showtimes": [
@@ -213,7 +213,7 @@
                 ]
             },
             {
-                "date": "2026-03-17",
+                "date": "2026-05-17",
                 "city": "Paris",
                 "country": "France",
                 "showtimes": [
@@ -233,7 +233,7 @@
         ],
         "details": [
             {
-                "date": "2026-02-25",
+                "date": "2026-04-25",
                 "city": "Seattle, WA",
                 "country": "USA",
                 "showtimes": [
@@ -241,7 +241,7 @@
                 ]
             },
             {
-                "date": "2026-02-27",
+                "date": "2026-04-27",
                 "city": "Portland, OR",
                 "country": "USA",
                 "showtimes": [
@@ -261,7 +261,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-20",
+                "date": "2026-05-20",
                 "city": "Manchester",
                 "country": "UK",
                 "showtimes": [
@@ -269,7 +269,7 @@
                 ]
             },
             {
-                "date": "2026-03-22",
+                "date": "2026-05-22",
                 "city": "Birmingham",
                 "country": "UK",
                 "showtimes": [
@@ -289,7 +289,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-25",
+                "date": "2026-05-25",
                 "city": "Philadelphia, PA",
                 "country": "USA",
                 "showtimes": [
@@ -297,7 +297,7 @@
                 ]
             },
             {
-                "date": "2026-03-27",
+                "date": "2026-05-27",
                 "city": "Washington, DC",
                 "country": "USA",
                 "showtimes": [
@@ -316,7 +316,7 @@
         ],
         "details": [
             {
-                "date": "2026-02-14",
+                "date": "2026-04-14",
                 "city": "Los Angeles, CA",
                 "country": "USA",
                 "showtimes": [
@@ -324,7 +324,7 @@
                 ]
             },
             {
-                "date": "2026-02-16",
+                "date": "2026-04-16",
                 "city": "San Diego, CA",
                 "country": "USA",
                 "showtimes": [
@@ -343,7 +343,7 @@
         ],
         "details": [
             {
-                "date": "2026-02-20",
+                "date": "2026-04-20",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -351,7 +351,7 @@
                 ]
             },
             {
-                "date": "2026-02-22",
+                "date": "2026-04-22",
                 "city": "Chicago, IL",
                 "country": "USA",
                 "showtimes": [
@@ -370,7 +370,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-01",
+                "date": "2026-05-01",
                 "city": "Boston, MA",
                 "country": "USA",
                 "showtimes": [
@@ -378,7 +378,7 @@
                 ]
             },
             {
-                "date": "2026-03-03",
+                "date": "2026-05-03",
                 "city": "Philadelphia, PA",
                 "country": "USA",
                 "showtimes": [
@@ -397,7 +397,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-06",
+                "date": "2026-05-06",
                 "city": "Nashville, TN",
                 "country": "USA",
                 "showtimes": [
@@ -405,7 +405,7 @@
                 ]
             },
             {
-                "date": "2026-03-08",
+                "date": "2026-05-08",
                 "city": "Atlanta, GA",
                 "country": "USA",
                 "showtimes": [
@@ -424,7 +424,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-12",
+                "date": "2026-05-12",
                 "city": "London",
                 "country": "UK",
                 "showtimes": [
@@ -432,7 +432,7 @@
                 ]
             },
             {
-                "date": "2026-03-14",
+                "date": "2026-05-14",
                 "city": "Amsterdam",
                 "country": "Netherlands",
                 "showtimes": [
@@ -451,7 +451,7 @@
         ],
         "details": [
             {
-                "date": "2026-02-28",
+                "date": "2026-04-28",
                 "city": "Dallas, TX",
                 "country": "USA",
                 "showtimes": [
@@ -459,7 +459,7 @@
                 ]
             },
             {
-                "date": "2026-03-02",
+                "date": "2026-05-02",
                 "city": "Houston, TX",
                 "country": "USA",
                 "showtimes": [
@@ -478,7 +478,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-18",
+                "date": "2026-05-18",
                 "city": "San Francisco, CA",
                 "country": "USA",
                 "showtimes": [
@@ -486,7 +486,7 @@
                 ]
             },
             {
-                "date": "2026-03-20",
+                "date": "2026-05-20",
                 "city": "Seattle, WA",
                 "country": "USA",
                 "showtimes": [
@@ -505,7 +505,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-22",
+                "date": "2026-05-22",
                 "city": "Denver, CO",
                 "country": "USA",
                 "showtimes": [
@@ -513,7 +513,7 @@
                 ]
             },
             {
-                "date": "2026-03-24",
+                "date": "2026-05-24",
                 "city": "Phoenix, AZ",
                 "country": "USA",
                 "showtimes": [
@@ -532,7 +532,7 @@
         ],
         "details": [
             {
-                "date": "2026-04-01",
+                "date": "2026-06-01",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -643,7 +643,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-28",
+                "date": "2026-05-28",
                 "city": "Las Vegas, NV",
                 "country": "USA",
                 "showtimes": [
@@ -662,7 +662,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-15",
+                "date": "2026-05-15",
                 "city": "Austin, TX",
                 "country": "USA",
                 "showtimes": [
@@ -700,7 +700,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-26",
+                "date": "2026-05-26",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -784,7 +784,7 @@
         ],
         "details": [
             {
-                "date": "2026-02-14",
+                "date": "2026-04-14",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -793,7 +793,7 @@
                 ]
             },
             {
-                "date": "2026-02-15",
+                "date": "2026-04-15",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -812,7 +812,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-07",
+                "date": "2026-05-07",
                 "city": "London",
                 "country": "UK",
                 "showtimes": [
@@ -821,7 +821,7 @@
                 ]
             },
             {
-                "date": "2026-03-08",
+                "date": "2026-05-08",
                 "city": "London",
                 "country": "UK",
                 "showtimes": [
@@ -868,7 +868,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-20",
+                "date": "2026-05-20",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -876,7 +876,7 @@
                 ]
             },
             {
-                "date": "2026-03-22",
+                "date": "2026-05-22",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -888,8 +888,8 @@
     },
     {
         "event_id": "36",
-        "name": "Les Mis\u00c3\u00a9rables",
-        "artist": "Claude-Michel Sch\u00c3\u00b6nberg",
+        "name": "Les MisÃ©rables",
+        "artist": "Claude-Michel SchÃ¶nberg",
         "type": "Theater",
         "genre": [
             "Musical"
@@ -980,7 +980,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-14",
+                "date": "2026-05-14",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -989,7 +989,7 @@
                 ]
             },
             {
-                "date": "2026-03-15",
+                "date": "2026-05-15",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -1460,7 +1460,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-14",
+                "date": "2026-05-14",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -1469,7 +1469,7 @@
                 ]
             },
             {
-                "date": "2026-03-15",
+                "date": "2026-05-15",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -1550,7 +1550,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-21",
+                "date": "2026-05-21",
                 "city": "Dallas, TX",
                 "country": "USA",
                 "showtimes": [
@@ -1559,7 +1559,7 @@
                 ]
             },
             {
-                "date": "2026-03-22",
+                "date": "2026-05-22",
                 "city": "Houston, TX",
                 "country": "USA",
                 "showtimes": [
@@ -1670,7 +1670,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-28",
+                "date": "2026-05-28",
                 "city": "Atlanta, GA",
                 "country": "USA",
                 "showtimes": [
@@ -1679,7 +1679,7 @@
                 ]
             },
             {
-                "date": "2026-03-29",
+                "date": "2026-05-29",
                 "city": "Orlando, FL",
                 "country": "USA",
                 "showtimes": [
@@ -1763,7 +1763,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-06",
+                "date": "2026-05-06",
                 "city": "New York, NY",
                 "country": "USA",
                 "showtimes": [
@@ -1773,7 +1773,7 @@
                 ]
             },
             {
-                "date": "2026-03-06",
+                "date": "2026-05-06",
                 "city": "Los Angeles, CA",
                 "country": "USA",
                 "showtimes": [
@@ -1795,7 +1795,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-13",
+                "date": "2026-05-13",
                 "city": "Chicago, IL",
                 "country": "USA",
                 "showtimes": [
@@ -1805,7 +1805,7 @@
                 ]
             },
             {
-                "date": "2026-03-13",
+                "date": "2026-05-13",
                 "city": "Austin, TX",
                 "country": "USA",
                 "showtimes": [
@@ -1827,7 +1827,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-20",
+                "date": "2026-05-20",
                 "city": "Atlanta, GA",
                 "country": "USA",
                 "showtimes": [
@@ -1838,7 +1838,7 @@
                 ]
             },
             {
-                "date": "2026-03-20",
+                "date": "2026-05-20",
                 "city": "Houston, TX",
                 "country": "USA",
                 "showtimes": [
@@ -2089,7 +2089,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-06",
+                "date": "2026-05-06",
                 "city": "London",
                 "country": "UK",
                 "showtimes": [
@@ -2099,7 +2099,7 @@
                 ]
             },
             {
-                "date": "2026-03-06",
+                "date": "2026-05-06",
                 "city": "Manchester",
                 "country": "UK",
                 "showtimes": [
@@ -2121,7 +2121,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-13",
+                "date": "2026-05-13",
                 "city": "Birmingham",
                 "country": "UK",
                 "showtimes": [
@@ -2132,7 +2132,7 @@
                 ]
             },
             {
-                "date": "2026-03-13",
+                "date": "2026-05-13",
                 "city": "Edinburgh",
                 "country": "UK",
                 "showtimes": [
@@ -2154,7 +2154,7 @@
         ],
         "details": [
             {
-                "date": "2026-03-20",
+                "date": "2026-05-20",
                 "city": "Bristol",
                 "country": "UK",
                 "showtimes": [
@@ -2164,7 +2164,7 @@
                 ]
             },
             {
-                "date": "2026-03-20",
+                "date": "2026-05-20",
                 "city": "Glasgow",
                 "country": "UK",
                 "showtimes": [

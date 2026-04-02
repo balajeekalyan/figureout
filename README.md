@@ -6,9 +6,13 @@
 
 FigureOut is a lightweight, modular orchestrator for developers who want to build LLM workflows without the framework bloat. Unlike heavy frameworks that hide logic behind abstractions, FigureOut keeps your code clean, predictable, and easy to debug. Perfect for prototyping and production-grade apps where you need full control.
 
-## Overview
+The package classifies incoming queries and dispatches them to the appropriate role, returning a structured JSON response.
 
-FigureOut has no hardcoded domain knowledge. You supply your own roles, system prompts, output schemas, and classifier guidelines via `RoleDefinition`. The package classifies incoming queries and dispatches them to the appropriate role, returning a structured JSON response.
+## Demo
+
+This demo shows the FigureOut package integration into a Concert event's Seat Selection page. The user enters queries like "Find me cheap seats", "Find me premium seats", and so on. The query is sent to the package and it sends the query to LLM. LLM will process the query and orchestrate MCP tool calling accordingly.
+
+https://github.com/user-attachments/assets/b638644f-d9e7-404d-8978-1cd9ffebb308
 
 ## Installation
 
@@ -208,6 +212,46 @@ To run an example:
 ```bash
 cd examples/<example-name>/mcp-server
 python app.py
+```
+
+## Streamlit Demo
+
+Install demo dependencies first (from the repo root):
+
+```bash
+pip install -r demo/requirements.txt
+```
+
+### Startup Advisor (`demo/app.py`)
+
+An interactive chatbot that routes questions to specialist roles (market research, technical advice, fundraising).
+
+```bash
+streamlit run demo/app.py
+```
+
+### Events & Sports Booking (`demo/app_mcp.py`)
+
+A conversational booking assistant backed by live MCP tool calls — search events, check seat availability, and explore fees.
+
+```bash
+streamlit run demo/app_mcp.py
+```
+
+Use the sidebar to choose an LLM provider, paste your API key, and optionally set your location and date range. Toggle **Show debug info** to see which MCP tools were called and token usage per query.
+
+### Utility: Postpone Event Dates (`demo/postpone_dates.py`)
+
+Shifts all past dates in `events.json` forward so every event is in the future from today. Run this whenever the demo data goes stale:
+
+```bash
+python demo/postpone_dates.py
+
+# Add a buffer of N days beyond today
+python demo/postpone_dates.py --offset-days 7
+
+# Point at a custom events.json
+python demo/postpone_dates.py --data-path path/to/events.json
 ```
 
 ## Development

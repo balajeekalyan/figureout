@@ -51,9 +51,9 @@ def load_json(filename: str) -> list:
             return json.load(f)
     return []
 
-@event_mcp.tool(name="get_events_by_artist", description="Search events database by artist name. Requires from_date (YYYY-MM-DD), to_date (YYYY-MM-DD), and location from user context.")
-async def get_events_by_artist(artist: str, from_date: str, to_date: str, location: str) -> str:
-    """Get available events for a given artist filtered by date range and location. Use from_date, to_date, and location from the user context."""
+@event_mcp.tool(name="get_events_by_artist", description="Search events database by artist name. Optionally filter by from_date (YYYY-MM-DD), to_date (YYYY-MM-DD), and location if provided in user context; omit or pass empty strings to return all matching events.")
+async def get_events_by_artist(artist: str, from_date: str = "", to_date: str = "", location: str = "") -> str:
+    """Get available events for a given artist filtered by date range and location. Use from_date, to_date, and location from the user context if available, otherwise omit them."""
     events = load_json("events.json")
     results = []
     for event in events:
@@ -70,9 +70,9 @@ async def get_events_by_artist(artist: str, from_date: str, to_date: str, locati
         return json.dumps(results)
     return json.dumps({"error": f"No events found for artist '{artist}'"})
 
-@event_mcp.tool(name="get_events_by_genre", description="Search events database by genre. Available genres: R&B, Pop, Dance, Neo-Soul, Afrobeats, Rock, Comedy, Basketball, Soccer, Tennis, MMA, Motorsport, Baseball, Hockey, Wrestling, Boxing, Musical, Drama, Hip-Hop, Electronic, Indie, EDM, House, Techno, Folk, Country, Trance, Dubstep, Amapiano, Dancehall, Ice Show, Live Show, Circus, Acrobatics, Educational, Performance Art, Children's Music, Interactive, Exhibition, Action, Thriller, Sci-Fi, Romance, Adventure, Horror, Animation, Family, Crime, Historical, Mystery, Documentary. Requires from_date (YYYY-MM-DD), to_date (YYYY-MM-DD), and location from user context.")
-async def get_events_by_genre(genre: str, from_date: str, to_date: str, location: str) -> str:
-    """Get available events for a given genre filtered by date range and location. Use from_date, to_date, and location from the user context."""
+@event_mcp.tool(name="get_events_by_genre", description="Search events database by genre. Available genres: R&B, Pop, Dance, Neo-Soul, Afrobeats, Rock, Comedy, Basketball, Soccer, Tennis, MMA, Motorsport, Baseball, Hockey, Wrestling, Boxing, Musical, Drama, Hip-Hop, Electronic, Indie, EDM, House, Techno, Folk, Country, Trance, Dubstep, Amapiano, Dancehall, Ice Show, Live Show, Circus, Acrobatics, Educational, Performance Art, Children's Music, Interactive, Exhibition, Action, Thriller, Sci-Fi, Romance, Adventure, Horror, Animation, Family, Crime, Historical, Mystery, Documentary. Optionally filter by from_date (YYYY-MM-DD), to_date (YYYY-MM-DD), and location if provided in user context; omit or pass empty strings to return all matching events.")
+async def get_events_by_genre(genre: str, from_date: str = "", to_date: str = "", location: str = "") -> str:
+    """Get available events for a given genre filtered by date range and location. Use from_date, to_date, and location from the user context if available, otherwise omit them."""
     events = load_json("events.json")
     results = []
     for event in events:
@@ -89,9 +89,9 @@ async def get_events_by_genre(genre: str, from_date: str, to_date: str, location
         return json.dumps(results)
     return json.dumps({"error": f"No events found for genre '{genre}'"})
 
-@event_mcp.tool(name="get_events_by_type", description="Search events database by event type. Available types: Concert, Standup Comedy, Sports, Theater, Music Festival, Family and Children, Movie. Requires from_date (YYYY-MM-DD), to_date (YYYY-MM-DD), and location from user context.")
-async def get_events_by_type(event_type: str, from_date: str, to_date: str, location: str) -> str:
-    """Get available events for a given event type filtered by date range and location. Use from_date, to_date, and location from the user context."""
+@event_mcp.tool(name="get_events_by_type", description="Search events database by event type. Available types: Concert, Standup Comedy, Sports, Theater, Music Festival, Family and Children, Movie. Optionally filter by from_date (YYYY-MM-DD), to_date (YYYY-MM-DD), and location if provided in user context; omit or pass empty strings to return all matching events.")
+async def get_events_by_type(event_type: str, from_date: str = "", to_date: str = "", location: str = "") -> str:
+    """Get available events for a given event type filtered by date range and location. Use from_date, to_date, and location from the user context if available, otherwise omit them."""
     events = load_json("events.json")
     results = []
     for event in events:
@@ -128,6 +128,16 @@ async def get_seats(event_id: str, tier: str = None) -> str:
             "rows": rows,
         },
     })
+
+@event_mcp.tool(name="get_addons", description="Get all available add-ons and upgrades for an event booking. Returns items grouped by category: access (VIP lounge, parking, meet & greet), food, beverage, merch (merchandise), and insurance. Optionally filter by category.")
+async def get_addons(category: str = None) -> str:
+    """Get available add-ons, optionally filtered by category (access, food, beverage, merch, insurance)."""
+    addons = load_json("addons.json")
+    if category:
+        addons = [a for a in addons if a["category"].lower() == category.lower()]
+        if not addons:
+            return json.dumps({"error": f"No add-ons found for category '{category}'"})
+    return json.dumps(addons)
 
 @event_mcp.tool(name="get_fees", description="Get all applicable fees for a specific event by its ID. Fees include service fee, convenience fee, facility fee, and sales tax with descriptions of how each is calculated.")
 async def get_fees(event_id: str) -> str:

@@ -13,28 +13,11 @@ const CATEGORY_LABELS = {
   insurance: "Insurance",
 };
 
-const CATEGORY_ORDER = ["access", "food", "beverage", "merch", "insurance"];
-
-const AVAILABLE_ADDONS = [
-  { name: "VIP Lounge Access", category: "access", price: 75 },
-  { name: "Parking Pass", category: "access", price: 25 },
-  { name: "Meet & Greet", category: "access", price: 120 },
-  { name: "Cheeseburger", category: "food", price: 12 },
-  { name: "Cheese Platter", category: "food", price: 14 },
-  { name: "Chicken Wrap", category: "food", price: 11 },
-  { name: "Fresh Fruit Bowl", category: "food", price: 9 },
-  { name: "Cookie Pack", category: "food", price: 5 },
-  { name: "Coffee", category: "beverage", price: 4 },
-  { name: "Orange Juice", category: "beverage", price: 5 },
-  { name: "Sparkling Water", category: "beverage", price: 3 },
-  { name: "Red Wine", category: "beverage", price: 10 },
-  { name: "Beer", category: "beverage", price: 8 },
-  { name: "Whiskey", category: "beverage", price: 12 },
-  { name: "Event T-Shirt", category: "merch", price: 35 },
-  { name: "Poster", category: "merch", price: 15 },
-  { name: "Tote Bag", category: "merch", price: 20 },
-  { name: "Event Insurance", category: "insurance", price: 18 },
-];
+function parsePrice(priceStr) {
+  if (typeof priceStr === "number") return priceStr;
+  const cleaned = String(priceStr).replace(/[^0-9.]/g, "");
+  return parseFloat(cleaned) || 0;
+}
 
 export default function Addons() {
   const navigate = useNavigate();
@@ -43,12 +26,14 @@ export default function Addons() {
   const [loading, setLoading] = useState(false);
   const [summary, setSummary] = useState("");
   const [selected, setSelected] = useState([]);
+  const [addons, setAddonsList] = useState([]);
 
   const toggleAddon = (addon) => {
+    const price = parsePrice(addon.price);
     setSelected((prev) =>
       prev.find((a) => a.name === addon.name)
         ? prev.filter((a) => a.name !== addon.name)
-        : [...prev, { name: addon.name, price: addon.price }]
+        : [...prev, { name: addon.name, price }]
     );
   };
 
@@ -57,7 +42,9 @@ export default function Addons() {
     setLoading(true);
     try {
       const data = await askAddons(query);
-      setSummary(data.summary || "");
+      const payload = data.response || data;
+      setAddonsList(payload.addons || []);
+      setSummary(payload.summary || "");
     } catch (err) {
       console.error(err);
       setSummary("Failed to get recommendations");
@@ -70,13 +57,12 @@ export default function Addons() {
     if (e.key === "Enter") handleSearch();
   };
 
-  const grouped = CATEGORY_ORDER
-    .map((cat) => ({
-      category: cat,
-      label: CATEGORY_LABELS[cat] || cat,
-      items: AVAILABLE_ADDONS.filter((a) => a.category === cat),
-    }))
-    .filter((g) => g.items.length > 0);
+  const categories = [...new Set(addons.map((a) => a.category).filter(Boolean))];
+  const grouped = categories.map((cat) => ({
+    category: cat,
+    label: CATEGORY_LABELS[cat] || cat,
+    items: addons.filter((a) => a.category === cat),
+  }));
 
   return (
     <div className="app">
@@ -99,25 +85,30 @@ export default function Addons() {
 
       <div className="addons-sections">
         {grouped.map((group) => (
-          <div key={group.category} className="addons-category">
-            <h3 className="addons-category-title">{group.label}</h3>
-            <ul className="addons-list">
-              {group.items.map((addon) => {
-                const isSelected = !!selected.find((a) => a.name === addon.name);
-                return (
-                  <li
-                    key={addon.name}
-                    className={`addon-row${isSelected ? " addon-row--selected" : ""}`}
-                    onClick={() => toggleAddon(addon)}
-                  >
-                    <span className="addon-row-name">{addon.name}</span>
-                    <span className="addon-row-price">${addon.price}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        ))}
+            <div key={group.category} className="addons-category">
+              <h3 className="addons-category-title">{group.label}</h3>
+              <ul className="addons-list">
+                {group.items.map((addon) => {
+                  const isSelected = !!selected.find((a) => a.name === addon.name);
+                  return (
+                    <li
+                      key={addon.name}
+                      className={`addon-row${isSelected ? " addon-row--selected" : ""}`}
+                      onClick={() => toggleAddon(addon)}
+                    >
+                      <div className="addon-row-info">
+                        <span className="addon-row-name">{addon.name}</span>
+                        {addon.description && (
+                          <span className="addon-row-desc">{addon.description}</span>
+                        )}
+                      </div>
+                      <span className="addon-row-price">${parsePrice(addon.price).toFixed(2)}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
       </div>
 
       <button

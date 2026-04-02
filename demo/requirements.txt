@@ -1,0 +1,2 @@
+figureout[openai]
+streamlit>=1.40.0
