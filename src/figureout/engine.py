@@ -174,7 +174,7 @@ class FigureOut:
         self._valid_roles = set(self._roles.keys())
 
         self.api_key = api_key
-        self._classification_cache: OrderedDict[str, list[str]] = OrderedDict()
+        self._response_cache: OrderedDict[str, dict] = OrderedDict()
 
         # Create LLM client once at init
         self.chat = get_llm_client(self.llm, api_key=self.api_key, llm_version=self.llm_version, max_output_tokens=self.max_output_tokens, max_retries=self.max_retries, timeout=self.timeout)
@@ -243,20 +243,24 @@ class FigureOut:
         """Send query to LLM with role-based system prompt, return result."""
         if role is not None:
             roles = [role]
+            cache_key = None
         else:
             cache_key = _cache_key(user_query, context)
-            if self.cache_enabled and cache_key in self._classification_cache:
-                roles = self._classification_cache[cache_key]
-                self._classification_cache.move_to_end(cache_key)
-            else:
-                try:
-                    roles = await classify_role(self.chat_lite, user_query, self._classification_prompt, self._valid_roles)
-                except Exception as exc:
-                    raise RuntimeError(f"Role classification failed: {exc}") from exc
-                if self.cache_enabled:
-                    self._classification_cache[cache_key] = roles
-                    if len(self._classification_cache) > self.cache_size:
-                        self._classification_cache.popitem(last=False)
+
+            # Full-response cache check — skip classification and LLM call entirely
+            if self.cache_enabled and cache_key in self._response_cache:
+                cached_response = self._response_cache[cache_key]
+                self._response_cache.move_to_end(cache_key)
+                if self.verbose:
+                    cached_debug = dict(cached_response["debug"])
+                    cached_debug["cached"] = True
+                    return {"response": cached_response["response"], "debug": cached_debug}
+                return cached_response["response"]
+
+            try:
+                roles = await classify_role(self.chat_lite, user_query, self._classification_prompt, self._valid_roles)
+            except Exception as exc:
+                raise RuntimeError(f"Role classification failed: {exc}") from exc
 
         # Select roles: filter off-topic, cap by max_roles
         selected_roles = [r for r in roles if r != "off_topic"][:self.max_roles]
@@ -428,9 +432,10 @@ class FigureOut:
         merged = self._merge_responses(role_results)
 
         if self.verbose:
-            return {
+            result = {
                 "response": merged,
                 "debug": {
+                    "cached": False,
                     "user_query": user_query,
                     "context": context,
                     "roles_matched": roles,
@@ -441,5 +446,14 @@ class FigureOut:
                     "assistant_messages": assistant_messages,
                 },
             }
+            if self.cache_enabled and cache_key is not None:
+                self._response_cache[cache_key] = result
+                if len(self._response_cache) > self.cache_size:
+                    self._response_cache.popitem(last=False)
+            return result
 
+        if self.cache_enabled and cache_key is not None:
+            self._response_cache[cache_key] = merged
+            if len(self._response_cache) > self.cache_size:
+                self._response_cache.popitem(last=False)
         return merged
