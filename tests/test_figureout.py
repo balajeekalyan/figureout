@@ -177,7 +177,7 @@ def test_booking_concierge_env_lite_llm_version(mock_get_llm):
 
 
 @patch("figureout.engine.get_llm_client")
-def test_classification_cache_hit(mock_get_llm):
+def test_response_cache_hit(mock_get_llm):
     mock_classify_chat = AsyncMock(return_value={
         "text": json.dumps({"roles": ["discovery"]}),
         "input_tokens": 10,
@@ -196,18 +196,19 @@ def test_classification_cache_hit(mock_get_llm):
     pkg = FigureOut(roles=ROLES)
     pkg.chat_lite = mock_classify_chat
     pkg.chat = mock_main_chat
-    pkg._classification_cache.clear()
+    pkg._response_cache.clear()
 
     asyncio.run(pkg.run("find something"))
     assert mock_classify_chat.call_count == 1
+    assert mock_main_chat.call_count == 1
     asyncio.run(pkg.run("find something"))
-    assert mock_classify_chat.call_count == 1  # cache hit
-    assert mock_main_chat.call_count == 2
-    pkg._classification_cache.clear()
+    assert mock_classify_chat.call_count == 1  # classification skipped
+    assert mock_main_chat.call_count == 1      # LLM call skipped
+    pkg._response_cache.clear()
 
 
 @patch("figureout.engine.get_llm_client")
-def test_classification_cache_miss(mock_get_llm):
+def test_response_cache_miss(mock_get_llm):
     mock_classify_chat = AsyncMock(return_value={
         "text": json.dumps({"roles": ["discovery"]}),
         "input_tokens": 10,
@@ -226,13 +227,13 @@ def test_classification_cache_miss(mock_get_llm):
     pkg = FigureOut(roles=ROLES)
     pkg.chat_lite = mock_classify_chat
     pkg.chat = mock_main_chat
-    pkg._classification_cache.clear()
+    pkg._response_cache.clear()
 
     asyncio.run(pkg.run("find something"))
     assert mock_classify_chat.call_count == 1
     asyncio.run(pkg.run("find something else"))
     assert mock_classify_chat.call_count == 2  # cache miss
-    pkg._classification_cache.clear()
+    pkg._response_cache.clear()
 
 
 @patch("figureout.engine.get_llm_client")
