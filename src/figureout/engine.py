@@ -255,7 +255,7 @@ class FigureOut:
                     cached_debug = dict(cached_response["debug"])
                     cached_debug["cached"] = True
                     return {"response": cached_response["response"], "debug": cached_debug}
-                return cached_response["response"]
+                return cached_response
 
             try:
                 roles = await classify_role(self.chat_lite, user_query, self._classification_prompt, self._valid_roles)
