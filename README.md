@@ -8,54 +8,6 @@ FigureOut is a lightweight, modular orchestrator for developers who want to buil
 
 The package classifies incoming queries and dispatches them to the appropriate role, returning a structured JSON response.
 
-## Demo
-
-This demo shows FigureOut integrated into a Concert event's Seat Selection page. The user types a natural language query (e.g. "Find me cheap seats", "Find me premium seats near the front") and FigureOut routes it to the LLM, which calls MCP tools to fetch live seat availability. The response includes up to four seat recommendations — highlighted on an interactive seat map — along with a plain-language summary. Sold seats are visually distinguished and non-selectable. The user can accept the AI suggestions or manually click any available seat, then proceed to the Add-ons page.
-
-https://github.com/user-attachments/assets/b638644f-d9e7-404d-8978-1cd9ffebb308
-
-## Streamlit Demo
-
-https://github.com/user-attachments/assets/74fe7f8f-2b8a-45a6-89a2-50cd1d273261
-
-Install demo dependencies first (from the repo root):
-
-```bash
-pip install -r demo/requirements.txt
-```
-
-### Startup Advisor (`demo/app.py`)
-
-An interactive chatbot that routes questions to specialist roles (market research, technical advice, fundraising).
-
-```bash
-streamlit run demo/app.py
-```
-
-### Events & Sports Booking (`demo/app_mcp.py`)
-
-A conversational booking assistant backed by live MCP tool calls — search events, check seat availability, and explore fees.
-
-```bash
-streamlit run demo/app_mcp.py
-```
-
-Use the sidebar to choose an LLM provider, paste your API key, and optionally set your location and date range. Toggle **Show debug info** to see which MCP tools were called and token usage per query.
-
-### Utility: Postpone Event Dates (`demo/postpone_dates.py`)
-
-Shifts all past dates in `events.json` forward so every event is in the future from today. Run this whenever the demo data goes stale:
-
-```bash
-python demo/postpone_dates.py
-
-# Add a buffer of N days beyond today
-python demo/postpone_dates.py --offset-days 7
-
-# Point at a custom events.json
-python demo/postpone_dates.py --data-path path/to/events.json
-```
-
 ## Installation
 
 Install the base package plus the extra for your LLM provider:
