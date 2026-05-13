@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "FigureOut: a lightweight and resilient multi-LLM orchestrator"
+message: "If you use this software, please cite it using these metadata."
+type: software
+authors:
+  - given-names: Balajee
+    family-names: Kalyanasundaram
+    email: kalyanasundarambalajee@gmail.com
+    orcid: "https://orcid.org/0009-0007-7292-2417"
+repository-code: https://github.com/balajeekalyan/figureout
+url: https://github.com/balajeekalyan/figureout
+abstract: >-
+  FigureOut is a lightweight, modular orchestrator for developers who want to
+  build LLM workflows without the framework bloat. It classifies incoming
+  queries and dispatches them to the appropriate role, returning a structured
+  JSON response. Supports OpenAI, Anthropic, Gemini, Meta, Mistral, and Groq
+  with optional MCP tool integration.
+license: MIT
+version: 0.2.3
+date-released: "2026-05-13"
+keywords:
+  - LLM
+  - orchestrator
+  - multi-LLM
+  - MCP
+  - AI
+  - Python
