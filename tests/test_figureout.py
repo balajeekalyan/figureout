@@ -388,3 +388,66 @@ def test_interpret_tool_response_false_returns_raw_output(mock_get_llm):
     mock_tool.fn.assert_called_once_with(query="test")
     assert isinstance(result, list)
     assert result[0]["id"] == 1
+
+
+@patch("figureout.engine.get_llm_client")
+def test_verbose_tokens_include_classifier(mock_get_llm):
+    mock_classify_chat = AsyncMock(return_value={
+        "text": json.dumps({"roles": ["discovery"]}),
+        "input_tokens": 10,
+        "output_tokens": 5,
+        "tools_used": [],
+    })
+    mock_main_chat = AsyncMock(return_value={
+        "text": json.dumps({"results": [], "summary": "No results"}),
+        "input_tokens": 20,
+        "output_tokens": 10,
+        "tools_used": [],
+        "tool_calls": [],
+        "assistant_message": {"role": "assistant", "content": "{}"},
+    })
+    mock_get_llm.side_effect = [mock_main_chat, mock_classify_chat]
+    pkg = FigureOut(roles=ROLES, verbose=True, cache_enabled=False)
+
+    debug = asyncio.run(pkg.run("find something"))["debug"]
+    assert debug["classifier_input_tokens"] == 10
+    assert debug["classifier_output_tokens"] == 5
+    assert debug["input_tokens"] == 30
+    assert debug["output_tokens"] == 15
+
+
+@patch("figureout.engine.get_llm_client")
+def test_verbose_off_topic_reports_classifier_tokens(mock_get_llm):
+    mock_classify_chat = AsyncMock(return_value={
+        "text": json.dumps({"roles": []}),
+        "input_tokens": 10,
+        "output_tokens": 5,
+        "tools_used": [],
+    })
+    mock_main_chat = AsyncMock()
+    mock_get_llm.side_effect = [mock_main_chat, mock_classify_chat]
+    pkg = FigureOut(roles=ROLES, verbose=True, cache_enabled=False)
+
+    debug = asyncio.run(pkg.run("what's the weather"))["debug"]
+    assert mock_main_chat.call_count == 0
+    assert debug["input_tokens"] == 10
+    assert debug["output_tokens"] == 5
+    assert debug["classifier_input_tokens"] == 10
+
+
+@patch("figureout.engine.get_llm_client")
+def test_verbose_explicit_role_has_no_classifier_tokens(mock_get_llm):
+    mock_main_chat = AsyncMock(return_value={
+        "text": json.dumps({"results": [], "summary": "No results"}),
+        "input_tokens": 20,
+        "output_tokens": 10,
+        "tools_used": [],
+        "tool_calls": [],
+        "assistant_message": {"role": "assistant", "content": "{}"},
+    })
+    mock_get_llm.return_value = mock_main_chat
+    pkg = FigureOut(roles=ROLES, verbose=True)
+
+    debug = asyncio.run(pkg.run("find something", role="discovery"))["debug"]
+    assert debug["classifier_input_tokens"] == 0
+    assert debug["input_tokens"] == 20
