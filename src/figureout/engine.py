@@ -23,13 +23,20 @@ def _cache_key(query: str, context: str | None = None) -> str:
 
 async def classify_role(chat, user_query: str, classification_prompt: str, valid_roles: set[str]) -> list[str]:
     """Use the LLM to determine the appropriate roles from a user query."""
+    roles, _, _ = await _classify_role_with_usage(chat, user_query, classification_prompt, valid_roles)
+    return roles
+
+
+async def _classify_role_with_usage(chat, user_query: str, classification_prompt: str, valid_roles: set[str]) -> tuple[list[str], int, int]:
+    """Classify the query and also return the classifier call's input and output token counts."""
     messages = [
         {"role": "system", "content": classification_prompt},
         {"role": "user", "content": user_query},
     ]
     result = await chat(messages, json_mode=True)
     parsed = _extract_json(result["text"])
-    return [r for r in parsed["roles"] if r in valid_roles]
+    roles = [r for r in parsed["roles"] if r in valid_roles]
+    return roles, result.get("input_tokens", 0), result.get("output_tokens", 0)
 
 
 class FigureOut:
@@ -241,6 +248,8 @@ class FigureOut:
         output_schema: str | None = None,
     ) -> dict:
         """Send query to LLM with role-based system prompt, return result."""
+        classifier_input_tokens = 0
+        classifier_output_tokens = 0
         if role is not None:
             roles = [role]
             cache_key = None
@@ -258,7 +267,9 @@ class FigureOut:
                 return cached_response
 
             try:
-                roles = await classify_role(self.chat_lite, user_query, self._classification_prompt, self._valid_roles)
+                roles, classifier_input_tokens, classifier_output_tokens = await _classify_role_with_usage(
+                    self.chat_lite, user_query, self._classification_prompt, self._valid_roles
+                )
             except Exception as exc:
                 raise RuntimeError(f"Role classification failed: {exc}") from exc
 
@@ -275,8 +286,10 @@ class FigureOut:
                         "context": context,
                         "roles_matched": roles,
                         "roles_selected": [],
-                        "input_tokens": 0,
-                        "output_tokens": 0,
+                        "input_tokens": classifier_input_tokens,
+                        "output_tokens": classifier_output_tokens,
+                        "classifier_input_tokens": classifier_input_tokens,
+                        "classifier_output_tokens": classifier_output_tokens,
                         "tools_used": [],
                         "assistant_messages": [],
                     },
@@ -289,8 +302,9 @@ class FigureOut:
             user_content = user_query
 
         assistant_messages = []
-        total_input_tokens = 0
-        total_output_tokens = 0
+        # Totals include the classifier call so reported cost covers the whole pipeline
+        total_input_tokens = classifier_input_tokens
+        total_output_tokens = classifier_output_tokens
 
         # LLM calls — one per selected role, in parallel, with native tool calling loop
         async def _run_role(role_to_run: str) -> tuple[str, dict]:
@@ -422,6 +436,8 @@ class FigureOut:
                         "roles_selected": selected_roles,
                         "input_tokens": total_input_tokens,
                         "output_tokens": total_output_tokens,
+                        "classifier_input_tokens": classifier_input_tokens,
+                        "classifier_output_tokens": classifier_output_tokens,
                         "tools_used": all_tools_used,
                         "assistant_messages": assistant_messages,
                     },
@@ -442,6 +458,8 @@ class FigureOut:
                     "roles_selected": selected_roles,
                     "input_tokens": total_input_tokens,
                     "output_tokens": total_output_tokens,
+                    "classifier_input_tokens": classifier_input_tokens,
+                    "classifier_output_tokens": classifier_output_tokens,
                     "tools_used": all_tools_used,
                     "assistant_messages": assistant_messages,
                 },
