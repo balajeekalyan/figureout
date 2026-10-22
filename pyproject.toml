@@ -9,7 +9,7 @@ description = "FigureOut - a lightweight and resilient multi-LLM orchestrator"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
-dependencies = ["fastmcp", "python-dotenv"]
+dependencies = ["fastmcp", "mcp>=1.25,<2", "python-dotenv"]  # mcp 2.x renamed FastMCP, whose internals FigureOut reads
 authors = [
     {name = "balajeekalyan"},
 ]

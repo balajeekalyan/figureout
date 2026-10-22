@@ -186,8 +186,11 @@ With `verbose=True`, the response is wrapped under a `"response"` key and a `"de
 ```python
 concierge = FigureOut(..., verbose=True)
 result = await concierge.run("Find flights to Tokyo")
-# {"response": {"flights": [...]}, "debug": {"input_tokens": 512, "output_tokens": 256, ...}}
+# {"response": {"flights": [...]}, "debug": {"input_tokens": 512, "output_tokens": 256,
+#   "classifier_input_tokens": 180, "classifier_output_tokens": 8, ...}}
 ```
+
+`input_tokens` and `output_tokens` are totals for the whole call, including the role-classification call. `classifier_input_tokens` and `classifier_output_tokens` give the classification share on its own; both are 0 when `role=` is passed explicitly.
 
 ## Examples
 
