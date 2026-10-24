@@ -414,7 +414,10 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
 
     elif llm == LLM.MISTRAL:
         try:
-            from mistralai import Mistral
+            try:
+                from mistralai.client import Mistral  # mistralai >= 3
+            except ImportError:
+                from mistralai import Mistral  # mistralai < 3
         except ImportError:
             raise ImportError(
                 "The 'mistralai' package is required to use LLM.MISTRAL. "
@@ -459,7 +462,8 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
                 {
                     "id": tc.id,
                     "name": tc.function.name,
-                    "arguments": json.loads(tc.function.arguments),
+                    # the SDK types arguments as str | dict
+                    "arguments": tc.function.arguments if isinstance(tc.function.arguments, dict) else json.loads(tc.function.arguments),
                 }
                 for tc in tool_calls_raw
             ]
