@@ -165,7 +165,7 @@ def test_booking_concierge_init_lite_override(mock_get_llm):
     mock_get_llm.return_value = MagicMock()
     pkg = FigureOut(lite_llm_version="my-custom-model", roles=ROLES)
     assert pkg.lite_llm_version == "my-custom-model"
-    mock_get_llm.assert_any_call(LLM.OPENAI, api_key=None, llm_version="my-custom-model", max_output_tokens=16384, max_retries=2, timeout=120.0)
+    mock_get_llm.assert_any_call(LLM.OPENAI, api_key=None, llm_version="my-custom-model", max_output_tokens=16384, max_retries=2, timeout=120.0, reasoning_effort=None)
 
 
 @patch("figureout.engine.get_llm_client")
@@ -451,3 +451,43 @@ def test_verbose_explicit_role_has_no_classifier_tokens(mock_get_llm):
     debug = asyncio.run(pkg.run("find something", role="discovery"))["debug"]
     assert debug["classifier_input_tokens"] == 0
     assert debug["input_tokens"] == 20
+
+
+@patch("figureout.engine.get_llm_client")
+def test_reasoning_effort_passed_to_clients(mock_get_llm):
+    mock_get_llm.return_value = MagicMock()
+    pkg = FigureOut(reasoning_effort="none", roles=ROLES)
+    assert pkg.reasoning_effort == "none"
+    assert mock_get_llm.call_count == 2
+    for call in mock_get_llm.call_args_list:
+        assert call.kwargs["reasoning_effort"] == "none"
+
+
+@patch("figureout.engine.get_llm_client")
+def test_reasoning_effort_env(mock_get_llm):
+    mock_get_llm.return_value = MagicMock()
+    with patch.dict(os.environ, {"FIGUREOUT_REASONING_EFFORT": "low"}):
+        pkg = FigureOut(roles=ROLES)
+    assert pkg.reasoning_effort == "low"
+
+
+def _openai_create_kwargs(reasoning_effort):
+    from figureout.llm import get_llm_client
+    message = MagicMock(content="ok", tool_calls=None)
+    response = MagicMock(choices=[MagicMock(finish_reason="stop", message=message)])
+    create = AsyncMock(return_value=response)
+    with patch("openai.AsyncOpenAI") as mock_client_cls, \
+         patch("figureout.llm._parse_openai_response", return_value={}):
+        mock_client_cls.return_value.chat.completions.create = create
+        chat = get_llm_client(LLM.OPENAI, api_key="test", llm_version="gpt-test", reasoning_effort=reasoning_effort)
+        tools = [{"name": "search", "description": "", "inputSchema": {"type": "object"}}]
+        asyncio.run(chat([{"role": "user", "content": "hi"}], tools=tools, require_tool_use=True))
+    return create.call_args.kwargs
+
+
+def test_openai_sends_reasoning_effort_when_set():
+    assert _openai_create_kwargs("none")["reasoning_effort"] == "none"
+
+
+def test_openai_omits_reasoning_effort_by_default():
+    assert "reasoning_effort" not in _openai_create_kwargs(None)

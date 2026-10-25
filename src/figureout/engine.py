@@ -58,6 +58,7 @@ class FigureOut:
         roles: dict[str, RoleDefinition] | None = None,
         timeout: float | None = None,
         inject_date: bool | None = None,
+        reasoning_effort: str | None = None,
     ):
         # Resolve LLM from constructor arg or env, default to OPENAI
         if llm is not None:
@@ -145,6 +146,13 @@ class FigureOut:
             env_val = os.environ.get("FIGUREOUT_INJECT_DATE")
             self.inject_date = _parse_bool_env(env_val) if env_val else True
 
+        # Resolve reasoning_effort from constructor arg or env, default to None
+        # None = don't send it (provider default); only the OpenAI provider uses it
+        if reasoning_effort is not None:
+            self.reasoning_effort = reasoning_effort
+        else:
+            self.reasoning_effort = os.environ.get("FIGUREOUT_REASONING_EFFORT") or None
+
         if self.max_roles < 1:
             raise ValueError("max_roles must be >= 1")
         if self.max_output_tokens < 1:
@@ -184,7 +192,7 @@ class FigureOut:
         self._response_cache: OrderedDict[str, dict] = OrderedDict()
 
         # Create LLM client once at init
-        self.chat = get_llm_client(self.llm, api_key=self.api_key, llm_version=self.llm_version, max_output_tokens=self.max_output_tokens, max_retries=self.max_retries, timeout=self.timeout)
+        self.chat = get_llm_client(self.llm, api_key=self.api_key, llm_version=self.llm_version, max_output_tokens=self.max_output_tokens, max_retries=self.max_retries, timeout=self.timeout, reasoning_effort=self.reasoning_effort)
 
         # Create lite LLM client for classification
         if lite_llm_version is not None:
@@ -193,7 +201,7 @@ class FigureOut:
             env_val = os.environ.get("FIGUREOUT_LITE_LLM_VERSION")
             self.lite_llm_version = env_val if env_val else self.llm_version
 
-        self.chat_lite = get_llm_client(self.llm, api_key=self.api_key, llm_version=self.lite_llm_version, max_output_tokens=self.max_output_tokens, max_retries=self.max_retries, timeout=self.timeout)
+        self.chat_lite = get_llm_client(self.llm, api_key=self.api_key, llm_version=self.lite_llm_version, max_output_tokens=self.max_output_tokens, max_retries=self.max_retries, timeout=self.timeout, reasoning_effort=self.reasoning_effort)
 
         if mcp_server is not None:
             self.tools = [

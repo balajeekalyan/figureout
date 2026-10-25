@@ -82,6 +82,7 @@ FigureOut(
     cache_enabled: bool = True,
     cache_size: int = 128,
     inject_date: bool = True,
+    reasoning_effort: str | None = None,
     api_key: str | None = None,
     mcp_server=None,
 )
@@ -103,6 +104,9 @@ All constructor params can also be set via environment variables:
 | `cache_enabled` | `FIGUREOUT_CACHE_ENABLED` |
 | `cache_size` | `FIGUREOUT_CACHE_SIZE` |
 | `inject_date` | `FIGUREOUT_INJECT_DATE` |
+| `reasoning_effort` | `FIGUREOUT_REASONING_EFFORT` |
+
+`reasoning_effort` is sent only by the OpenAI provider, and only when set. Some OpenAI reasoning models (e.g. `gpt-6-luna`) reject function tools on `/v1/chat/completions` unless it is `"none"`.
 
 ### `RoleDefinition`
 

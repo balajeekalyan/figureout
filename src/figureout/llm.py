@@ -131,7 +131,7 @@ def build_tool_result_messages(llm: LLM, assistant_message: dict, tool_results: 
         raise ValueError(f"Unsupported LLM for tool results: {llm}")
 
 
-def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None = None, max_output_tokens: int = 16384, max_retries: int = 0, timeout: float = 120.0):
+def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None = None, max_output_tokens: int = 16384, max_retries: int = 0, timeout: float = 120.0, reasoning_effort: str | None = None):
     """Return a callable (messages, tools=None) -> dict for the given LLM.
 
     Each call returns a dict with keys:
@@ -143,6 +143,8 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
     llm_version: optional model version string to override the default.
     max_output_tokens: maximum number of output tokens for LLM responses.
     max_retries: number of retries on transient errors (0 = no retries).
+    reasoning_effort: OpenAI only; sent as reasoning_effort when set (e.g. "none"
+        for models that reject function tools with reasoning on /v1/chat/completions).
     """
     if not llm_version:
         raise ValueError(f"No model version specified for {llm.value}. Pass llm_version= or set the FIGUREOUT_LLM_VERSION environment variable.")
@@ -161,6 +163,8 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
 
         async def chat(messages: list[dict], tools: list[dict] | None = None, json_mode: bool = False, require_tool_use: bool = False) -> dict:
             kwargs = {"model": model, "messages": messages}
+            if reasoning_effort is not None:
+                kwargs["reasoning_effort"] = reasoning_effort
             if json_mode:
                 kwargs["response_format"] = {"type": "json_object"}
             if tools:
