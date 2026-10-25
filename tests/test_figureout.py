@@ -497,3 +497,20 @@ def test_openai_sends_reasoning_effort_when_set():
 
 def test_openai_omits_reasoning_effort_by_default():
     assert "reasoning_effort" not in _openai_create_kwargs(None)
+
+
+def _gemini_response(parts):
+    content = types.SimpleNamespace(parts=parts)
+    return types.SimpleNamespace(candidates=[types.SimpleNamespace(content=content)])
+
+
+def test_gemini_assistant_message_keeps_thought_signatures():
+    from figureout.llm import _build_gemini_assistant_message
+    call = types.SimpleNamespace(function_call=types.SimpleNamespace(name="search", args={"city": "Dallas"}),
+                                 text=None, thought_signature=b"sig-1")
+    text = types.SimpleNamespace(function_call=None, text="ok", thought_signature=None)
+    msg = _build_gemini_assistant_message(_gemini_response([call, text]))
+    assert msg["parts"] == [
+        {"function_call": {"name": "search", "args": {"city": "Dallas"}}, "thought_signature": b"sig-1"},
+        {"text": "ok"},
+    ]

@@ -48,20 +48,29 @@ def _resolve_api_key(llm: LLM, api_key: str | None = None) -> str:
 
 
 def _build_gemini_assistant_message(response):
-    """Build a Gemini assistant message that preserves tool call parts."""
+    """Build a Gemini assistant message that preserves tool call parts.
+
+    Thought signatures are kept on each part: Gemini 3 models reject a follow-up request whose
+    function call parts lack the signature they were returned with.
+    """
     assistant_parts = []
     if response.candidates and response.candidates[0].content:
         for part in response.candidates[0].content.parts:
             if hasattr(part, "function_call") and part.function_call:
                 fc = part.function_call
-                assistant_parts.append({
+                built = {
                     "function_call": {
                         "name": fc.name,
                         "args": dict(fc.args) if fc.args else {},
                     }
-                })
+                }
             elif hasattr(part, "text") and part.text:
-                assistant_parts.append({"text": part.text})
+                built = {"text": part.text}
+            else:
+                continue
+            if getattr(part, "thought_signature", None):
+                built["thought_signature"] = part.thought_signature
+            assistant_parts.append(built)
     return {"role": "model", "parts": assistant_parts if assistant_parts else [{"text": ""}]}
 
 
@@ -278,7 +287,9 @@ def get_llm_client(llm: LLM, api_key: str | None = None, llm_version: str | None
             return {
                 "text": text,
                 "input_tokens": response.usage_metadata.prompt_token_count,
-                "output_tokens": response.usage_metadata.candidates_token_count,
+                # thinking tokens are billed as output but reported separately from candidates
+                "output_tokens": (response.usage_metadata.candidates_token_count or 0)
+                                 + (getattr(response.usage_metadata, "thoughts_token_count", None) or 0),
                 "tools_used": tools_used,
                 "tool_calls": parsed_tool_calls,
                 "assistant_message": _build_gemini_assistant_message(response),
