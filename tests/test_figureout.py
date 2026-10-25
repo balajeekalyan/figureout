@@ -1,6 +1,8 @@
 import asyncio
 import json
 import os
+import sys
+import types
 from unittest.mock import patch, MagicMock, AsyncMock
 
 import figureout
@@ -476,9 +478,13 @@ def _openai_create_kwargs(reasoning_effort):
     message = MagicMock(content="ok", tool_calls=None)
     response = MagicMock(choices=[MagicMock(finish_reason="stop", message=message)])
     create = AsyncMock(return_value=response)
-    with patch("openai.AsyncOpenAI") as mock_client_cls, \
+    # stub module so the test runs without the optional openai package (CI installs only .[dev])
+    fake_openai = types.ModuleType("openai")
+    fake_openai.AsyncOpenAI = MagicMock()
+    fake_openai.AsyncOpenAI.return_value.chat.completions.create = create
+    fake_openai.BadRequestError = type("BadRequestError", (Exception,), {})
+    with patch.dict(sys.modules, {"openai": fake_openai}), \
          patch("figureout.llm._parse_openai_response", return_value={}):
-        mock_client_cls.return_value.chat.completions.create = create
         chat = get_llm_client(LLM.OPENAI, api_key="test", llm_version="gpt-test", reasoning_effort=reasoning_effort)
         tools = [{"name": "search", "description": "", "inputSchema": {"type": "object"}}]
         asyncio.run(chat([{"role": "user", "content": "hi"}], tools=tools, require_tool_use=True))
